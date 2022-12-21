@@ -85,6 +85,7 @@ body {
 	// Прижимаем footer
 	> main {
 		flex: 1 1 auto;
+		background-color: $linkColor;
 	}
 	// Фикс для слайдеров
 	> * {

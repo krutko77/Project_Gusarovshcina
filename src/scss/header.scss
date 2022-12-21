@@ -6,14 +6,24 @@
    z-index: 10;
 
    &__container {
-      display: flex;
+		display: flex;
       align-items: center;
-      justify-content: space-between;   
+      justify-content: space-between;
       min-height: 70px;
    }
 
    .logo-header {
-      z-index: 5;      
+      z-index: 5;
+		&__link {
+			display: block;
+			position: relative;
+		}
+		&__img {
+			position: absolute;
+			top: -40px;
+			left: 0;
+			width: 130px;			
+		}
    }  
    
    .menu {
