@@ -25,7 +25,7 @@ $fontSize: rem(16); // где 14(px) - размер шрифта по умолч
 
 // Основные цвета
 $mainColor: #000; // Цвет шрифта по умолчанию
-$mainBgColor: #fff;
+$mainColorLight: #fff;
 $accentColor: #f29102;
 $linkColor: #4b8d3b;
 
@@ -84,8 +84,7 @@ body {
 	overflow: hidden;
 	// Прижимаем footer
 	> main {
-		flex: 1 1 auto;
-		background-color: $linkColor;
+		flex: 1 1 auto;		
 	}
 	// Фикс для слайдеров
 	> * {
