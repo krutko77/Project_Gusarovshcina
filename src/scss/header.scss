@@ -35,11 +35,12 @@
 
 		@media (max-width: $tablet) {
 			top: -30px;
-			width: 100px;
+			width: 95px;
 		}
 
 		@media (max-width:$mobileSmall) {
-			width: 95px;
+			top: -35px;
+			width: 90px;
 		}
 	}
       

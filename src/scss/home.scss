@@ -4,32 +4,65 @@
 	// .home__offer
 
 	&__offer {
-		background: url("../img/main-bg.jpg") 0 70px/100% auto no-repeat;
-		height: 100vh;
-		display: flex;
-		justify-content: end;
-		padding-top: calc(130px + 230*((100vw - 320px) / (1920 - 320)));
-		padding-right: calc(5px + 65*((100vw - 320px) / (1920 - 320)));
-
-		@media (max-width:$mobileSmall){
-			background: url("../img/mobail-bg.jpg") 0 70px/100% auto no-repeat;
-		}
+		position: relative;
+		padding-top: 56.25%;
+		
+		
+		
+		// padding-top: calc(120px + 240*((100vw - 480px) / (1920 - 480)));
+		
+		
 	}	
 }
 .offer-home {
 
+	&::before {
+		display: block;
+		content: "";
+		width: 100%;
+
+	}
+
+	// .offer-home__wrapper
+
+	&__wrapper {
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-size: cover !important;
+		padding-right: calc(5px + 65*((100vw - 320px) / (1920 - 320)));
+		background: url("../img/main-bg.jpg") 0 0 no-repeat;
+
+		@media (max-width:$mobileSmall){
+			background: url("../img/mobail-bg.jpg") 0 0 no-repeat;
+			// padding-top: 170px;
+		}
+	}
+
 	// .offer-home__content
+
 	&__content {
 		text-align: center;
 		color: $mainColorLight;
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
-		max-width: calc(270px + 530*((100vw - 320px) / (1920 - 320)));
+		max-width: calc(290px + 510*((100vw - 480px) / (1920 - 480)));
+		// margin-bottom: 420px;
+		// margin-bottom: calc(66px + 354*((100vw - 480px) / (1920 - 480)));
+
+		// @media (max-width:$mobileSmall) {
+		// 	margin-bottom: calc(29px + 112*((100vw - 320px) / (480 - 320)));
+		// }
 	}
 
-	&__content h1 span {
+	&__wrapper h1 span {
 		// font-size: rem(60);
-		font-size: calc(20px + 40*((100vw - 320px) / (1920 - 320)));
+		font-size: calc(22px + 38*((100vw - 480px) / (1920 - 480)));
 		line-height: math.div(84, 60);
 	}
 
@@ -37,7 +70,7 @@
 
 	&__title {
 		// @include adaptiveValue("font-size", 100, 30, 1920, 320);
-		font-size: calc(32px + 68*((100vw - 320px) / (1920 - 320)));
+		font-size: calc(34px + 66*((100vw - 480px) / (1920 - 480)));
 		font-weight: 900;		
 		margin-bottom: 15px;
 		text-shadow: 5px 5px 30px #000;
@@ -51,16 +84,16 @@
 
 	&__descripton {
 		// font-size: rem(25);
-		font-size: calc(12px + 13*((100vw - 320px) / (1920 - 320)));
+		font-size: calc(14px + 11*((100vw - 480px) / (1920 - 480)));
 		font-weight: 500;
 		line-height: math.div(45 ,30);
 		text-shadow: 5px 5px 30px #000, -5px -5px 30px #000;
 	}
 }
 
+// .about-home {
+// 	height: 500px;
+// 	// background-color: $linkColor;
+// }
 
 
-
-@media (max-width:$mobileSmall){
-   
-}
