@@ -1,17 +1,16 @@
 // home
 .home {
-
+	padding-top: 70px;
+	
 	// .home__offer
 
 	&__offer {
 		position: relative;
-		padding-top: 56.25%;
+		padding-top: 52.60%;
 		
-		
-		
-		// padding-top: calc(120px + 240*((100vw - 480px) / (1920 - 480)));
-		
-		
+		@media (max-width:$mobileSmall){
+			padding-top: 95.60%;
+		}
 	}	
 }
 .offer-home {
@@ -20,7 +19,6 @@
 		display: block;
 		content: "";
 		width: 100%;
-
 	}
 
 	// .offer-home__wrapper
@@ -30,17 +28,16 @@
 		justify-content: end;
 		align-items: center;
 		position: absolute;
-		top: 70px;
+		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
 		background-size: cover !important;
-		padding-right: calc(5px + 65*((100vw - 320px) / (1920 - 320)));
+		padding-right: calc(rem(10) + 60*((100vw - 320px) / (1920 - 320)));
 		background: url("../img/main-bg.jpg") 0 0 no-repeat;
 
 		@media (max-width:$mobileSmall){
 			background: url("../img/mobail-bg.jpg") 0 0 no-repeat;
-			// padding-top: 170px;
 		}
 	}
 
@@ -50,30 +47,23 @@
 		text-align: center;
 		color: $mainColorLight;
 		text-transform: uppercase;
-		letter-spacing: 1.5px;
-		max-width: calc(290px + 510*((100vw - 480px) / (1920 - 480)));
-		// margin-bottom: 420px;
-		// margin-bottom: calc(66px + 354*((100vw - 480px) / (1920 - 480)));
-
-		// @media (max-width:$mobileSmall) {
-		// 	margin-bottom: calc(29px + 112*((100vw - 320px) / (480 - 320)));
-		// }
+		letter-spacing: 1.5px;		
 	}
 
 	&__wrapper h1 span {
 		// font-size: rem(60);
-		font-size: calc(22px + 38*((100vw - 480px) / (1920 - 480)));
+		font-size: calc(rem(22) + 38*((100vw - 480px) / (1920 - 480)));
 		line-height: math.div(84, 60);
 	}
 
 	// .offer-home__title
 
 	&__title {
-		// @include adaptiveValue("font-size", 100, 30, 1920, 320);
-		font-size: calc(34px + 66*((100vw - 480px) / (1920 - 480)));
+		font-size: calc(rem(34) + 66*((100vw - 480px) / (1920 - 480)));
 		font-weight: 900;		
 		margin-bottom: 15px;
-		text-shadow: 5px 5px 30px #000;
+		text-shadow: 5px 5px 30px $mainColor;
+		max-width: em(800, 100);
 
 		@media (max-width:$mobileSmall){
 			margin-bottom: 10px;
@@ -84,7 +74,7 @@
 
 	&__descripton {
 		// font-size: rem(25);
-		font-size: calc(14px + 11*((100vw - 480px) / (1920 - 480)));
+		font-size: calc(rem(14) + 11*((100vw - 480px) / (1920 - 480)));
 		font-weight: 500;
 		line-height: math.div(45 ,30);
 		text-shadow: 5px 5px 30px #000, -5px -5px 30px #000;
