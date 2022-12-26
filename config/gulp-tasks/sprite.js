@@ -21,7 +21,7 @@ export const sprite = () => {
 				},
 				transform: [
 					{
-						svgo: {
+						svg: {
 							plugins: [
 								{ removeXMLNS: true },
 								{ convertPathData: false },
