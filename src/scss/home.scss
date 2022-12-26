@@ -63,8 +63,7 @@
 		font-weight: 900;		
 		margin-bottom: 15px;
 		text-shadow: 5px 5px 30px $mainColor;
-		max-width: em(800, 100);
-
+		
 		@media (max-width:$mobileSmall){
 			margin-bottom: 10px;
 		}

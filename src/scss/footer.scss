@@ -1,51 +1,73 @@
 //footer
 .footer {
-
+	color: $mainColorLight;
+	background-color: $linkColor;
+	
 	// .footer__container
 
 	&__container {
+		
 	}
 
 	// .footer__top
 
 	&__top {
+		display: flex;
+		justify-content: space-between;
+		padding: em(20, 16) 0;		
 	}
 
 	// .footer__left-block
 
 	&__left-block {
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		text-align: center;
 	}
 
 	// .footer__right-block
 
 	&__right-block {
+		flex: 1 1;
+		max-width: em(605, 16);
 	}
 
 	// .footer__menu
 
 	&__menu {
+		font-weight: 500;
+		line-height: math.div(24, 16);
+		margin-bottom: em(10, 16);
 	}
 
 	// .footer__bottom
 
 	&__bottom {
+		display: flex;
+		justify-content: center;
+		padding: em(15, 16);
+		border-top: 1.5px solid $mainColorLight;
 	}
 }
 .left-block {
 
-	// .left-block__content
-
-	&__content {
-	}
-
 	// .left-block__title
 
 	&__title {
+		font-size: 42px;
+		font-weight: 900;
+		margin-bottom: em(5, 16);
+	}
+
+	&__title span {
+		font-size: 25px;		
 	}
 
 	// .left-block__descripton
 
 	&__descripton {
+		font-weight: 500;
+		line-height: math.div(24, 16);
 	}
 }
 .right-block {
@@ -53,11 +75,18 @@
 	// .right-block__actions
 
 	&__actions {
+		line-height: math.div(24, 16);
+		margin-bottom: em(10, 16);
 	}
 
 	// .right-block__social-list
 
 	&__social-list {
+		display: flex;		
+	}
+
+	&__social-list li:not(:last-child) {
+		margin-right: 15px;		
 	}
 }
 .menu-footer {
@@ -65,16 +94,46 @@
 	// .menu-footer__list
 
 	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		text-transform: uppercase;
 	}
 
 	// .menu-footer__item
 
-	&__item {
-	}
+	&__item:after {
+		content: '|';
+		margin: 0 em(7, 16);
+  }
 
 	// .menu-footer__link
 
 	&__link {
+		position: relative;
+	}
+
+	&__link::before,
+	&__link::after {
+		content: '';
+		position: absolute; 
+		top: 98%;
+		width: 0;
+		height: 1.3px;
+		background: $mainColorLight;
+		transition: 0.3s;
+	}
+
+	&__link::before {
+		left: 50%;
+	}
+
+	&__link::after {
+		right: 50%;
+	}
+
+	&__link:hover::before,
+	&__link:hover::after {
+		width: 50%;
 	}
 }
 .actions-footer {
@@ -87,6 +146,9 @@
 	// .actions-footer__icon
 
 	&__icon {
+		width: em(16, 16);
+		vertical-align: middle;
+		margin-right: em(5, 16);
 	}
 
 	// .actions-footer__link
@@ -123,5 +185,6 @@
 	// .footer-bottom__copyright
 
 	&__copyright {
+		
 	}
 }
