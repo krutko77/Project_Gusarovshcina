@@ -1,7 +1,88 @@
-//====================================================================================================
+// home
+.home {
+	padding-top: 70px;
+	
+	// .home__offer
 
-//====================================================================================================
-
-@media (max-width:$tablet){
-   
+	&__offer {
+		position: relative;
+		padding-top: 52.60%;
+		
+		@media (max-width:$mobileSmall){
+			padding-top: 95.60%;
+		}
+	}	
 }
+.offer-home {
+
+	&::before {
+		display: block;
+		content: "";
+		width: 100%;
+	}
+
+	// .offer-home__wrapper
+
+	&__wrapper {
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-size: cover !important;
+		padding-right: calc(rem(10) + 60*((100vw - 320px) / (1920 - 320)));
+		background: url("../img/main-bg.jpg") 0 0 no-repeat;
+
+		@media (max-width:$mobileSmall){
+			background: url("../img/mobail-bg.jpg") 0 0 no-repeat;
+		}
+	}
+
+	// .offer-home__content
+
+	&__content {
+		text-align: center;
+		color: $mainColorLight;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;		
+	}
+
+	&__wrapper h1 span {
+		// font-size: rem(60);
+		font-size: calc(rem(22) + 38*((100vw - 480px) / (1920 - 480)));
+		line-height: math.div(84, 60);
+	}
+
+	// .offer-home__title
+
+	&__title {
+		font-size: calc(rem(34) + 66*((100vw - 480px) / (1920 - 480)));
+		font-weight: 900;		
+		margin-bottom: 15px;
+		text-shadow: 5px 5px 30px $mainColor;
+		
+		@media (max-width:$mobileSmall){
+			margin-bottom: 10px;
+		}
+	}
+
+	// .offer-home__descripton
+
+	&__descripton {
+		// font-size: rem(25);
+		font-size: calc(rem(14) + 11*((100vw - 480px) / (1920 - 480)));
+		font-weight: 500;
+		line-height: math.div(45 ,30);
+		text-shadow: 5px 5px 30px #000, -5px -5px 30px #000;
+	}
+}
+
+// .about-home {
+// 	height: 500px;
+// 	// background-color: $linkColor;
+// }
+
+
