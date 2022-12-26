@@ -86,7 +86,7 @@
 	}
 
 	&__social-list li:not(:last-child) {
-		margin-right: 15px;		
+		margin-right: 20px;		
 	}
 }
 .menu-footer {
@@ -147,6 +147,7 @@
 
 	&__icon {
 		width: em(16, 16);
+		height: em(16, 16);
 		vertical-align: middle;
 		margin-right: em(5, 16);
 	}
@@ -176,8 +177,15 @@
 	// .social-list__link
 					
 
-	&__link
-					 {
+	&__link {
+		display: flex;
+		width: em(32, 16);
+		height: em(32, 16);
+	}
+
+   &__icon {
+		width: em(32, 16);
+		height: em(32, 16);
 	}
 }
 .footer-bottom {
