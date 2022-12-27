@@ -1,7 +1,8 @@
 //footer
 .footer {
 	color: $mainColorLight;
-	background-color: $linkColor;
+	background: url("./../img/footer-bg-60.jpg") 0 0 no-repeat;
+	background-size: cover;
 	
 	// .footer__container
 
@@ -14,7 +15,13 @@
 	&__top {
 		display: flex;
 		justify-content: space-between;
-		padding: em(20, 16) 0;		
+		padding: em(20, 16) 0;
+
+		@media (max-width:$tablet) {
+			flex-direction: column;
+			justify-content: end;
+			align-items: center;
+		}
 	}
 
 	// .footer__left-block
@@ -23,6 +30,10 @@
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
 		text-align: center;
+
+		@media (max-width:$tablet) {
+			margin-bottom: 20px;
+		}
 	}
 
 	// .footer__right-block
@@ -30,13 +41,17 @@
 	&__right-block {
 		flex: 1 1;
 		max-width: em(605, 16);
+
+		@media (max-width:$tablet) {
+			text-align: center;
+		}
 	}
 
 	// .footer__menu
 
 	&__menu {
-		font-weight: 500;
-		line-height: math.div(24, 16);
+		font-weight: 400;
+		line-height: math.div(28, 16);
 		margin-bottom: em(10, 16);
 	}
 
@@ -54,13 +69,21 @@
 	// .left-block__title
 
 	&__title {
-		font-size: 42px;
+		font-size: calc(rem(35) + 7*((100vw - 320px) / (1920 - 320)));
 		font-weight: 900;
-		margin-bottom: em(5, 16);
+		margin-bottom: em(5, 16);		
 	}
 
 	&__title span {
-		font-size: 25px;		
+		font-size: calc(rem(22) + 3*((100vw - 320px) / (1920 - 320)));
+	}
+
+	&__link {
+		transition: opacity 0.3s ease;
+	}
+
+	&__link:hover {
+		opacity: 0.8;
 	}
 
 	// .left-block__descripton
@@ -75,7 +98,7 @@
 	// .right-block__actions
 
 	&__actions {
-		line-height: math.div(24, 16);
+		line-height: math.div(28, 16);
 		margin-bottom: em(10, 16);
 	}
 
@@ -83,6 +106,10 @@
 
 	&__social-list {
 		display: flex;		
+
+		@media (max-width:$tablet) {
+			justify-content: center;
+		}
 	}
 
 	&__social-list li:not(:last-child) {
@@ -97,13 +124,18 @@
 		display: flex;
 		flex-wrap: wrap;
 		text-transform: uppercase;
+
+		@media (max-width:$tablet) {
+			justify-content: center;
+		}
 	}
 
 	// .menu-footer__item
 
-	&__item:after {
+	&__item:not(:last-child):after {
 		content: '|';
 		margin: 0 em(7, 16);
+		color: $accentColor;
   }
 
 	// .menu-footer__link
@@ -116,10 +148,10 @@
 	&__link::after {
 		content: '';
 		position: absolute; 
-		top: 98%;
+		top: 106%;
 		width: 0;
-		height: 1.3px;
-		background: $mainColorLight;
+		height: 2px;
+		background: $accentColor;
 		transition: 0.3s;
 	}
 
@@ -138,11 +170,6 @@
 }
 .actions-footer {
 
-	// .actions-footer__location
-
-	&__location {
-	}
-
 	// .actions-footer__icon
 
 	&__icon {
@@ -150,21 +177,15 @@
 		height: em(16, 16);
 		vertical-align: middle;
 		margin-right: em(5, 16);
+		fill: $accentColor;
 	}
-
-	// .actions-footer__link
 
 	&__link {
+		transition: color 0.3s ease;
 	}
 
-	// .actions-footer__email
-
-	&__email {
-	}
-
-	// .actions-footer__phone
-
-	&__phone {
+	&__link:hover {
+		color: $accentColor;
 	}
 }
 .social-list {
@@ -178,14 +199,17 @@
 					
 
 	&__link {
-		display: flex;
-		width: em(32, 16);
-		height: em(32, 16);
+		display: flex;	
 	}
 
    &__icon {
 		width: em(32, 16);
 		height: em(32, 16);
+		transition: opacity 0.3s ease;
+	}
+
+	&__icon:hover {
+		opacity: 0.8;
 	}
 }
 .footer-bottom {
