@@ -4,14 +4,14 @@
    background-color: $mainColorLight;
    width: 100%;
    z-index: 10;
-	padding: 10px 0;
+	// padding: 10px 0;// 
 	border-bottom: solid 2px $linkColor;
 
 	&__container-wrapper {
 		display: flex;
       align-items: center;
       justify-content: space-between;
-      min-height: 50px;
+      min-height: 70px;
 		max-width: 1920px;
 		padding-left: calc(15px + 55*((100vw - 1200px) / (1920 - 1200)));
 		padding-right: calc(15px + 55*((100vw - 1200px) / (1920 - 1200)));
@@ -31,10 +31,10 @@
 		&::before {
 			content: "";
 			position: absolute;
-			top: -30px;
+			top: -25px;
 			left: 5px;
-			width: 134px;
-			height: 134px;
+			width: 124px;
+			height: 124px;
 			border-radius: 50%;
 			background-color: $linkColor;
 		}
@@ -46,9 +46,9 @@
 
 	&__logo {
 		position: absolute;
-		top: -28px;
+		top: -23px;
 		left: 0;
-		width: 130px;
+		width: 120px;
 		
 		@media (max-width: $tablet) {
 			top: -30px;
@@ -99,6 +99,7 @@
       
       &__item {
          display: inline-block;
+			position: relative;
 			margin: 0;
       
 			@media (max-width: $mobile) {
@@ -112,8 +113,7 @@
          text-transform: uppercase;
          cursor: pointer;
          display: block;
-         position: relative;
-			font-size: rem(14);
+         font-size: rem(14);
 			line-height: math.div(21, 14);
 
          @media (max-width: $pc) {
@@ -164,12 +164,8 @@
 //headerScroll
 ._header-scroll {
    position: fixed;
-   top: -200px;
+   top: -150px;
 }
-
-._header-scroll {
-   min-height: 50px;
-} 
 
 ._header-show {
    transition: top 0.7s 0s;
