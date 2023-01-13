@@ -5,8 +5,9 @@
    width: 100%;
    z-index: 10;
 	padding: 10px 0;
+	border-bottom: solid 2px $linkColor;
 
-   &__container-wrapper {
+	&__container-wrapper {
 		display: flex;
       align-items: center;
       justify-content: space-between;
@@ -26,6 +27,17 @@
 		width: 100px;
 		margin-right: 20px;
 		transition: opacity 0.3s ease;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: -30px;
+			left: 5px;
+			width: 134px;
+			height: 134px;
+			border-radius: 50%;
+			background-color: $linkColor;
+		}
 	}
 
 	&__link:hover {
@@ -34,10 +46,10 @@
 
 	&__logo {
 		position: absolute;
-		top: -40px;
+		top: -28px;
 		left: 0;
 		width: 130px;
-
+		
 		@media (max-width: $tablet) {
 			top: -30px;
 			width: 95px;
@@ -46,7 +58,7 @@
 		@media (max-width:$mobileSmall) {
 			top: -35px;
 			width: 90px;
-		}
+		}		
 	}
       
    .menu {
