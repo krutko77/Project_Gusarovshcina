@@ -1,14 +1,19 @@
 // home
 .home {
 	padding-top: 70px;
-	.text {
+
+	p.text:not(:last-child) {
 		margin-bottom: 25px;
+
+		@media (max-width:$mobileSmall){
+			margin-bottom: 20px;
+		}
 	}
 	// .home__offer
 
 	&__offer {
 		position: relative;
-		padding-top: 52.60%;
+		padding-top: 53.12%;
 		
 		@media (max-width:$mobileSmall){
 			padding-top: 95.60%;
@@ -16,7 +21,6 @@
 	}	
 }
 .offer-home {
-
 	&::before {
 		display: block;
 		content: "";
@@ -82,11 +86,7 @@
 	}
 }
 
-.about-home {
-	padding: 70px 0;
-	
-	// background-color: $linkColor;
-
+.about-home {	
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -94,20 +94,30 @@
 	}
 
 	&__title {
-		max-width: 850px;
+		max-width: 600px;
 	}
 
-	&__img-1 {
-		max-width: 600px;		
+	&__img-box-1 {
+		width: 50%;
 	}
 
-	&__img-2 {
-		max-width: 350px;		
+	&__img-box-2 {
+		width: 30%;
+	}
+
+	&__img-box-1, &__img-box-2 {
+		@media (max-width:$mobileSmall){
+			width: 100%; 
+		}
+	}
+
+	&__img {
+		width: 100%;
+		object-fit: cover;
 	}
 }
 
 .features-home {
-
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -115,7 +125,7 @@
 	}
 
 	&__title {
-		max-width: 800px;
+		max-width: 600px;
 	}
 }
 

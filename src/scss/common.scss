@@ -3,32 +3,58 @@
 	display: none;
 }
 
+section {
+	padding: 70px 0 0;
+
+	@media (max-width:$pc){
+		 padding-top: calc(rem(50) + 20*((100vw - 478px) / (1200 - 478)));
+		//  padding-bottom: calc(rem(50) + 20*((100vw - 478px) / (1200 - 478)));
+	}
+}
+
 h2 {
-	font-size: 35px;
+	font-size: 40px;
 	text-align: center;		
 	margin-bottom: 30px;
+
+	@media (max-width:$pc){
+		font-size:  calc(rem(27) + 13*((100vw - 478px) / (1200 - 478)));
+		margin-bottom: calc(rem(20) + 30*((100vw - 478px) / (1200 - 478)));
+	}
 }
 
 .title {
 	text-transform: uppercase;
 	font-family: "Merriweather", serif;
 	font-weight: 900;
-	line-height: math.div(36, 30);	
+	line-height: math.div(36, 30);		
 }
 
 .text {
+	font-size: rem(18);
 	line-height: math.div(30, 18);
 	text-align:justify; 
+
+	@media (max-width:$pc){
+		font-size:  calc(rem(16) + 2*((100vw - 478px) / (1200 - 478)));
+ }
 }
 
-.img-left {
+.float-left {
 	float: left;
-	margin: 0 30px 20px 0;	
+	margin: 0 em(30, 18) em(20, 18) 0;	
 }
 
-.img-right {
+.float-right {
 	float: right;
-	margin: 0 0 20px 30px;	
+	margin: 0 0 em(20, 18) em(30, 18);	
+}
+
+.float-left, .float-right {
+	@media (max-width:$mobileSmall){
+		clear: both; 
+		margin: 10px 0 10px;
+	}
 }
 
 .text-link {
