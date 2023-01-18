@@ -118,6 +118,8 @@
 }
 
 .features-home {
+	height: 1000px;
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -129,4 +131,16 @@
 	}
 }
 
+.questions-home {
+	height: 600px;
+	background: url("../img/home-bg-20.jpg") center / cover no-repeat fixed;
 
+	&__title {
+		color: $mainColorLight;
+	}
+}
+
+.action-home {
+	height: 600px;
+	background-color: $bgColor;
+}
