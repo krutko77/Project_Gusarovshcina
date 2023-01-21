@@ -33,7 +33,6 @@ h2 {
 .text {
 	font-size: rem(18);
 	line-height: math.div(30, 18);
-	text-align:justify; 
 
 	@media (max-width:$pc){
 		font-size:  calc(rem(16) + 2*((100vw - 478px) / (1200 - 478)));
