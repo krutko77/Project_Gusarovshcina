@@ -118,7 +118,7 @@
 }
 
 .features-home {
-	padding-bottom: 50px;
+	padding-bottom: 70px;
 
 		@media (max-width:$pc){
 			padding-bottom: calc(rem(30) + 20*((100vw - 478px) / (1200 - 478)));
