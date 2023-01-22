@@ -15,12 +15,17 @@ section {
 h2 {
 	font-size: 40px;
 	text-align: center;		
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 
 	@media (max-width:$pc){
 		font-size:  calc(rem(27) + 13*((100vw - 478px) / (1200 - 478)));
-		margin-bottom: calc(rem(20) + 30*((100vw - 478px) / (1200 - 478)));
+		margin-bottom: calc(rem(30) + 20*((100vw - 478px) / (1200 - 478)));
 	}
+}
+
+h3 {
+	font-size: 34px;
+	margin-bottom: 20px;
 }
 
 .title {
