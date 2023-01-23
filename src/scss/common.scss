@@ -63,6 +63,7 @@ h3 {
 
 .text-link {
 	color: $linkColor;
+	transition: color 0.3s ease;
 }
 
 .text-link:hover {
@@ -70,3 +71,41 @@ h3 {
 	text-decoration: underline;
 	text-underline-offset: 4px;
 }
+
+// Общие стили для всех кнопок сайта
+.button, .book-button {
+	display: inline-block;
+	padding: 10px 24px 7px;
+	border-radius: 4px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+}
+
+.button {
+	border: solid 2px $themeColor;
+	background-color: transparent;
+	color: $themeColor;
+
+	&:hover {
+		background-color: $themeColor;
+		color: $mainColorLight;
+	}
+}
+
+.book-button {
+	border: solid 2px $accentColor;
+	background-color: $accentColor;
+	color: $mainColorLight;;
+
+	&:hover {
+		background-color: transparent;
+		color: $accentColor;
+	}
+}
+
+button:active, .button:active, .book-button:active {
+	transform: translate(1px, 2px);
+}
+
+
