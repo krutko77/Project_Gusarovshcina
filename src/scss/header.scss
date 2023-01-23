@@ -16,10 +16,14 @@
 		padding-left: calc(15px + 55*((100vw - 1200px) / (1920 - 1200)));
 		padding-right: calc(15px + 55*((100vw - 1200px) / (1920 - 1200)));
 
-		@media (max-width:$pc){
+		@media (max-width:$pc) {
 			padding: 0 15px;
 		}
-   }
+
+		@media (max-width:$mobile) {
+			min-height: 50px;   
+		}
+	}
 
    &__link {
 		display: block;
@@ -44,11 +48,11 @@
 				height: 99px;
 			}
 	
-			@media (max-width:$mobileSmall) {
+			@media (max-width:$mobile) {
 				top: -16px;
 				left: 3px;
-				width: 94px;
-				height: 94px;
+				width: 84px;
+				height: 84px;
 			}		
 		}
 	}
@@ -68,9 +72,9 @@
 			width: 95px;
 		}
 
-		@media (max-width:$mobileSmall) {
+		@media (max-width:$mobile) {
 			top: -15px;
-			width: 90px;
+			width: 80px;
 		}		
 	}
       

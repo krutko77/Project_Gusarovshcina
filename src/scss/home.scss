@@ -2,6 +2,10 @@
 .home {
 	padding-top: 70px;
 
+	@media (max-width:$mobile){
+		padding-top: 50px;		 
+	}
+
 	p.text:not(:last-child) {
 		margin-bottom: 25px;
 
@@ -97,11 +101,19 @@
 		max-width: 600px;
 	}
 
-	&__img-box-2 {
+	&__img-box {
 		width: 30%;
+
+		@media (max-width:$tablet){
+			width: 40%;
+		}
+
+		@media (max-width:$mobile){
+			 width: 45%; 
+		}
 	}
 
-	&__img-box-1, &__img-box-2 {
+	&__img-box {
 		@media (max-width:$mobileSmall){
 			width: 100%; 
 		}
@@ -146,6 +158,10 @@
 		display: flex;
 		gap: 20px;
 
+		@media (max-width:$tablet){
+			gap: 5px;
+		}
+
 		@media (max-width:$mobile){
 			flex-direction: column; 
 			gap: 0;
@@ -153,9 +169,11 @@
 	}
 
 	&__content-block:not(:last-child) {
-		@media (max-width:$mobile){
-			margin-bottom: 30px;			
-		}
+			margin-bottom: 20px;
+			
+		@media (max-width:$tablet){
+			margin-bottom: 30px;
+		} 
 	}
 
 	&__reverse {
