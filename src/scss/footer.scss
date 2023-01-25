@@ -4,12 +4,6 @@
 	background: url("./../img/footer-bg-40.jpg") 0 0 no-repeat;
 	background-size: cover;
 	
-	// .footer__container
-
-	&__container {
-		
-	}
-
 	// .footer__top
 
 	&__top {
@@ -32,7 +26,7 @@
 		text-align: center;
 
 		@media (max-width:$tablet) {
-			margin-bottom: 20px;
+			margin-bottom: em(20,16);
 		}
 	}
 
@@ -113,7 +107,7 @@
 	}
 
 	&__social-list li:not(:last-child) {
-		margin-right: 20px;		
+		margin-right: em(20, 16);
 	}
 }
 .menu-footer {
@@ -191,13 +185,7 @@
 }
 .social-list {
 
-	// .social-list__item
-
-	&__item {
-	}
-
 	// .social-list__link
-					
 
 	&__link {
 		display: flex;	
@@ -213,11 +201,4 @@
 		opacity: 0.8;
 	}
 }
-.footer-bottom {
 
-	// .footer-bottom__copyright
-
-	&__copyright {
-		
-	}
-}
