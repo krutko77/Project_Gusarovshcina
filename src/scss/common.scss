@@ -92,6 +92,7 @@ h4 {
 	display: inline-block;
 	padding: 10px 24px 7px;
 	border-radius: 4px;
+	font-weight: 500;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: all 0.3s ease;
@@ -101,6 +102,7 @@ h4 {
 	border: solid 2px $themeColor;
 	background-color: transparent;
 	color: $themeColor;
+	padding: 10px 46px 7px;
 
 	&:hover {
 		background-color: $themeColor;
@@ -123,4 +125,18 @@ button:active, .button:active, .book-button:active {
 	transform: translate(1px, 2px);
 }
 
+.button-block {
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-self: center;
+	gap: rem(15);
+}
 
+.margin-bottom {
+	margin-bottom: rem(25);
+
+		@media (max-width:$mobileSmall){
+			margin-bottom: rem(20);
+		}
+}
