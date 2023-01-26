@@ -194,6 +194,10 @@
 
 	&__img-wrap {
 		flex: 0 1 50%;
+
+		@media (max-width:$mobile){
+			margin-bottom: 10px;
+		}		
 	}
 
 	// .features-home__img
