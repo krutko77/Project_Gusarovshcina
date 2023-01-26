@@ -40,10 +40,11 @@
 		bottom: 0;
 		background-size: cover !important;
 		padding-right: calc(rem(10) + 60*((100vw - 320px) / (1920 - 320)));
-		background: url("../img/main-bg.jpg") 0 0 no-repeat;
+		background: url("../img/main-bg-offer.jpg") 0 0 no-repeat;
 
 		@media (max-width:$mobileSmall){
-			background: url("../img/mobail-bg.jpg") 0 0 no-repeat;
+			padding-bottom: rem(30);
+			background: url("../img/mobail-bg-offer.jpg") 0 0 no-repeat;
 		}
 	}
 
