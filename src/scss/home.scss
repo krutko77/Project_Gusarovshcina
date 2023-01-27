@@ -88,6 +88,8 @@
 }
 
 .about-home {
+	background: url("../img/bg-home-about.jpg") 0 0;
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -127,12 +129,7 @@
 }
 
 .features-home {
-	padding-bottom: rem(70);
-
-		@media (max-width:$pc){
-			padding-bottom: calc(rem(30) + 20*((100vw - 478px) / (1200 - 478)));
-		}
-
+	
 	// .features-home__container
 
 	&__container {
@@ -145,6 +142,11 @@
 
 	&__title {
 		max-width: rem(600);
+	}
+
+	&__title-look {
+		text-align: center;
+		margin-bottom: em(30, 34);
 	}
 
 	// .features-home__content-block
@@ -161,6 +163,10 @@
 			flex-direction: column; 
 			gap: 0;
 		}
+	}
+
+	&__content-block:last-child {
+		margin-bottom: em(50, 18);
 	}
 
 	&__content-block:not(:last-child) {
@@ -210,7 +216,6 @@
 }
 
 .questions-home {
-	padding-bottom: 70px;
 	background: url("../img/home-bg-30.jpg") center / cover no-repeat fixed;
 	color: $mainColorLight;
 
@@ -279,12 +284,7 @@
 .action-home {
 	// background-color: $bgColor;
 	background: url("../img/bg-home-action.jpg") 0 0;
-	padding-bottom: rem(70);
 	
-		@media (max-width:$pc){
-			padding-bottom: calc(rem(30) + 20*((100vw - 478px) / (1200 - 478)));
-		}
-
 	// .action-home__title
 
 	&__title {
@@ -315,7 +315,8 @@
 		max-width: rem(480);
 		background-color: $mainColorLight;
 		padding: em(15, 18) em(15, 18) em(30, 18);
-		transition: all 0.3s ease;
+		transform: translate(-2px, -3px);
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
 		@media (max-width:$pc){
 			max-width:  calc(rem(340) + 160*((100vw - 768px) / (1200 - 768)));
@@ -325,11 +326,6 @@
 			max-width: rem(480);
 		}
 	}	
-
-	&__content-block:hover {
-		transform: translate(-2px, -3px);
-		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-	}
 
 	// .action-home__img
 
