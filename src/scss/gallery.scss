@@ -1,0 +1,60 @@
+// gallery
+.gallery {
+
+	// .gallery__header
+
+	&__header {
+		background: url("./../img/gallery/bg-gallery-20.jpg") 0 0 no-repeat;
+		background-size: cover;
+		min-height: 400px;
+		color: $mainColorLight;
+		display: flex;	
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;	
+	}
+}
+.header-gallery {
+
+	// .header-gallery__container
+
+	&__container {
+		display: flex;
+	
+	}
+
+	// .header-gallery__breadcrumbs
+
+	&__breadcrumbs {
+	}
+
+	// .header-gallery__title
+
+	&__title {
+		font-size: 60px;	
+	}
+}
+.breadcrumbs {
+
+	// .breadcrumbs__list
+
+	&__list {
+	}
+
+	// .breadcrumbs__item
+
+	&__item {
+	}
+
+	// .breadcrumbs__link
+
+	&__link {
+	}
+
+	// .breadcrumbs__current
+
+	&__current {
+	}
+}
+.title {
+}

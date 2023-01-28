@@ -80,6 +80,15 @@ h4 {
 	}
 }
 
+.link {
+	transition: color 0.3s ease;
+}
+
+.link:hover {
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
 .text-link {
 	color: $linkColor;
 	transition: color 0.3s ease;
@@ -139,4 +148,32 @@ button:active, .button:active, .book-button:active {
 
 .margin-bottom {
 	margin-bottom: em(25, 18);
+}
+
+.breadcrumbs {
+	white-space: nowrap;
+
+	// .breadcrumbs__list
+	&__list {
+		display: flex;
+	}
+	// .breadcrumbs__item
+	&__item {
+	}
+	// .breadcrumbs__link
+	&__link {
+		display: flex;
+		align-items: center;
+		// &::after {
+		// 	content: "\e900";
+		// 	@extend %ic;
+		// 	transform: rotate(-90deg);
+		// 	font-size: rem(6);
+		// 	margin: 0px em(10, 6);
+		// }
+	}
+	// .breadcrumbs__current
+	&__current {
+		opacity: 0.7;
+	}
 }
