@@ -216,11 +216,12 @@
    &__icon {
 		width: em(40, 16);
 		height: em(40, 16);
+		opacity: 0.7;
 		transition: opacity 0.3s ease;
 	}
 
 	&__icon:hover {
-		opacity: 0.8;
+		opacity: 1;
 	}
 }
 
