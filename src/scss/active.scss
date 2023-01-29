@@ -1,0 +1,73 @@
+// active
+
+.active {
+	padding-top: 70px;
+
+	@media (max-width:$mobile){
+		padding-top: 50px;		 
+	}
+		// .active__header
+
+		&__header {
+		background: url("./../img/gallery/bg-gallery-20.jpg") 0 0 no-repeat;
+		background-size: cover;
+		min-height: 400px;
+		color: $mainColorLight;
+		display: flex;	
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;	
+		}
+
+		// .active__catalog
+
+		&__catalog {
+		}
+}
+.header-active {
+
+		// .header-active__title
+
+		&__title {
+		}
+}
+.title {
+}
+.catalog-active {
+
+		// .catalog-active__container
+
+		&__container {
+		}
+
+		// .catalog-active__breadcrumbs
+
+		&__breadcrumbs {
+		}
+}
+.breadcrumbs {
+
+		// .breadcrumbs__list
+
+		&__list {
+		}
+
+		// .breadcrumbs__item
+
+		&__item {
+		}
+
+		// .breadcrumbs__link
+
+		&__link {
+		}
+
+		// .breadcrumbs__current
+
+		&__current {
+		}
+}
+.text {
+}
+.link {
+}

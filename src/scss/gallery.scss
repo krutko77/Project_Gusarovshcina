@@ -1,12 +1,17 @@
 // gallery
 .gallery {
+	padding-top: 70px;
+
+	@media (max-width:$mobile){
+		padding-top: 50px;		 
+	}
 
 	// .gallery__header
 
 	&__header {
 		background: url("./../img/gallery/bg-gallery-20.jpg") 0 0 no-repeat;
 		background-size: cover;
-		min-height: 400px;
+		min-height: 350px;
 		color: $mainColorLight;
 		display: flex;	
 		flex-direction: column;
