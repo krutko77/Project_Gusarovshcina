@@ -315,7 +315,6 @@
 		max-width: rem(480);
 		background-color: $mainColorLight;
 		padding: em(15, 18) em(15, 18) em(30, 18);
-		transform: translate(-2px, -3px);
 		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
 		@media (max-width:$pc){

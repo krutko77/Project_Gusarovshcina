@@ -1,4 +1,5 @@
 // gallery
+
 .gallery {
 	padding-top: 70px;
 
@@ -6,9 +7,9 @@
 		padding-top: 50px;		 
 	}
 
-	// .gallery__header
+		// .gallery__header
 
-	&__header {
+		&__header {
 		background: url("./../img/gallery/bg-gallery-20.jpg") 0 0 no-repeat;
 		background-size: cover;
 		min-height: 350px;
@@ -16,50 +17,83 @@
 		display: flex;	
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;	
-	}
+		align-items: center;
+		}
+
+		// .gallery__catalog
+
+		&__catalog {
+			background: url("./../img/gallery/bg-main-gallery.JPG") 0 0 no-repeat;
+			background-size: cover;
+		}
 }
 .header-gallery {
 
-	// .header-gallery__container
+		// .header-gallery__title
+
+		&__title {
+			font-size: 60px;
+		}
+}
+
+.catalog-gallery {
+
+	// .catalog-gallery__container
 
 	&__container {
-		display: flex;
-	
 	}
 
-	// .header-gallery__breadcrumbs
+	// .catalog-gallery__content-wrap
 
-	&__breadcrumbs {
+	&__content-wrap {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+		gap: rem(50);
 	}
 
-	// .header-gallery__title
-
-	&__title {
-		font-size: 60px;	
-	}
-}
-.breadcrumbs {
-
-	// .breadcrumbs__list
-
-	&__list {
-	}
-
-	// .breadcrumbs__item
-
-	&__item {
-	}
-
-	// .breadcrumbs__link
+	// .catalog-gallery__link
 
 	&__link {
 	}
 
-	// .breadcrumbs__current
+	// .catalog-gallery__content-block
 
-	&__current {
+	&__content-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-width: rem(500);
+		background-color: $mainColorLight;
+		padding: em(15, 18) em(15, 18) em(30, 18);
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+		@media (max-width:$pc){
+			max-width:  calc(rem(340) + 160*((100vw - 768px) / (1200 - 768)));
+		}
+
+		@media (max-width:$mobile){
+			max-width: rem(480);
+		}
 	}
-}
-.title {
+
+	&__content-block:hover img {
+		transform: scale(1.2);
+		overflow: hidden;
+	}
+
+	// .catalog-gallery__img
+
+	&__img {
+		width: 100%;
+		object-fit: cover;
+		margin-bottom: em(30, 18);
+	}
+
+	// .catalog-gallery__subtitle
+
+	&__subtitle {
+		text-align: center;
+	}
+
 }

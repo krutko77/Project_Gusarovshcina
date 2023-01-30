@@ -152,6 +152,7 @@ button:active, .button:active, .book-button:active {
 
 .breadcrumbs {
 	white-space: nowrap;
+	transform: translateY(-50px);
 
 	// .breadcrumbs__list
 	&__list {
@@ -163,17 +164,14 @@ button:active, .button:active, .book-button:active {
 	// .breadcrumbs__link
 	&__link {
 		display: flex;
-		align-items: center;
-		// &::after {
-		// 	content: "\e900";
-		// 	@extend %ic;
-		// 	transform: rotate(-90deg);
-		// 	font-size: rem(6);
-		// 	margin: 0px em(10, 6);
-		// }
+		align-items: center;		
 	}
 	// .breadcrumbs__current
-	&__current {
-		opacity: 0.7;
+
+	&__icon::after {
+		content: "\e902";
+		@extend %ic;
+		font-size: rem(14);
+		margin: 0px em(7, 14);
 	}
 }
