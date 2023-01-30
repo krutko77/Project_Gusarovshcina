@@ -12,27 +12,24 @@
 		&__header {
 		background: url("./../img/gallery/bg-gallery-20.jpg") 0 0 no-repeat;
 		background-size: cover;
-		min-height: 350px;
+		min-height: rem(350);
 		color: $mainColorLight;
 		display: flex;	
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+
+			@media (max-width:$pc){
+				min-height: calc(rem(220) + 130*((100vw - 478px) / (1200 - 478)));
+			}
 		}
+
 
 		// .gallery__catalog
 
 		&__catalog {
 			background: url("./../img/gallery/bg-main-gallery.JPG") 0 0 no-repeat;
 			background-size: cover;
-		}
-}
-.header-gallery {
-
-		// .header-gallery__title
-
-		&__title {
-			font-size: 60px;
 		}
 }
 
@@ -50,6 +47,11 @@
 		grid-template-columns: 1fr 1fr;
 		justify-items: center;
 		gap: rem(50);
+
+		@media (max-width:$mobile) {
+			grid-template-columns: 1fr;
+			 gap: rem(30); 
+		}
 	}
 
 	// .catalog-gallery__link
@@ -62,12 +64,13 @@
 	&__content-block {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		align-items: center;
 		max-width: rem(500);
 		background-color: $mainColorLight;
-		padding: em(15, 18) em(15, 18) em(30, 18);
+		padding: em(15, 18) em(15, 18) em(40, 18);
 		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-
+		overflow: hidden;
+		
 		@media (max-width:$pc){
 			max-width:  calc(rem(340) + 160*((100vw - 768px) / (1200 - 768)));
 		}
@@ -77,9 +80,9 @@
 		}
 	}
 
-	&__content-block:hover img {
-		transform: scale(1.2);
+	&__img-wrap {
 		overflow: hidden;
+		margin-bottom: em(30, 18);
 	}
 
 	// .catalog-gallery__img
@@ -87,13 +90,30 @@
 	&__img {
 		width: 100%;
 		object-fit: cover;
-		margin-bottom: em(30, 18);
+		transition: all 0.8s ease;
+	}
+
+	&__content-block:hover img {
+		transform: scale(1.05);		
 	}
 
 	// .catalog-gallery__subtitle
 
 	&__subtitle {
 		text-align: center;
+	}
+
+	&__view {
+		// text-transform: uppercase;
+		font-weight: 500;
+		color: $themeColor;
+		transition: color 0.3s ease;
+	}
+
+	&__content-block:hover span {
+		color: $linkHoverColor;
+		text-decoration: underline;
+		text-underline-offset: 4px;
 	}
 
 }

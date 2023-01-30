@@ -12,6 +12,14 @@ section {
 	}
 }
 
+h1 {
+	font-size: rem(60);
+		
+	@media (max-width:$pc) {
+		font-size:  calc(rem(40) + 20*((100vw - 478px) / (1200 - 478)));
+	}
+}	
+
 h2 {
 	font-size: rem(40);
 	text-align: center;		
