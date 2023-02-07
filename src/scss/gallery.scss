@@ -28,7 +28,7 @@
 		// .gallery__catalog
 
 		&__catalog {
-			background: url("./../img/gallery/bg-main-gallery.JPG") 0 0 no-repeat;
+			background: url("./../img/gallery/bg-main-gallery.jpg") 0 0 no-repeat;
 			background-size: cover;
 		}
 }
@@ -54,17 +54,13 @@
 		}
 	}
 
-	// .catalog-gallery__link
-
-	&__link {
-	}
-
 	// .catalog-gallery__content-block
 
 	&__content-block {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		position: relative;
 		max-width: rem(500);
 		background-color: $mainColorLight;
 		padding: em(15, 18) em(15, 18) em(40, 18);
@@ -78,6 +74,17 @@
 		@media (max-width:$mobile){
 			max-width: rem(480);
 		}
+	}
+
+	// .catalog-gallery__link
+
+	&__link {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
 	}
 
 	&__img-wrap {

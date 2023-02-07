@@ -12,6 +12,14 @@ section {
 	}
 }
 
+section.first-section {
+	padding-top: rem(20);
+	
+	@media (max-width:$pc){
+		padding-top: calc(rem(15) + 5*((100vw - 478px) / (1200 - 478)));		
+  }
+}
+
 h1 {
 	font-size: rem(60);
 		
@@ -160,7 +168,11 @@ button:active, .button:active, .book-button:active {
 
 .breadcrumbs {
 	white-space: nowrap;
-	transform: translateY(-50px);
+	margin-bottom: rem(35);
+	
+	@media (max-width:$pc){
+		margin-bottom: calc(rem(25) + 10*((100vw - 478px) / (1200 - 478)));		
+	}
 
 	// .breadcrumbs__list
 	&__list {
@@ -176,7 +188,7 @@ button:active, .button:active, .book-button:active {
 	}
 	// .breadcrumbs__current
 
-	&__icon::after {
+	&__icon::before {
 		content: "\e902";
 		@extend %ic;
 		font-size: rem(14);
