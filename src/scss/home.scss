@@ -1,11 +1,6 @@
 // home
 .home {
-	padding-top: 70px;
-
-	@media (max-width:$mobile){
-		padding-top: 50px;		 
-	}
-
+	
 	p.text:not(:last-child) {
 		margin-bottom: em(25, 18);		
 	}

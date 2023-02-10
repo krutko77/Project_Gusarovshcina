@@ -1,12 +1,7 @@
 // gallery
 
 .gallery {
-	padding-top: 70px;
-
-	@media (max-width:$mobile){
-		padding-top: 50px;		 
-	}
-
+	
 		// .gallery__header
 
 		&__header {

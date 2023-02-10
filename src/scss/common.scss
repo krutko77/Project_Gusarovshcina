@@ -3,6 +3,15 @@
 	display: none;
 }
 
+.page {
+	padding-top: 70px;
+
+	@media (max-width:$mobile){
+		padding-top: 50px;
+	}
+
+}
+
 section {
 	padding: rem(70) 0 rem(70);
 
@@ -12,7 +21,7 @@ section {
 	}
 }
 
-section.first-section {
+section.breadcrumbs-section {
 	padding-top: rem(20);
 	
 	@media (max-width:$pc){
