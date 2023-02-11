@@ -1,5 +1,9 @@
 // bath
 
+.description {
+	margin-bottom: em(35, 18);
+}
+
 .gallery {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -16,11 +20,64 @@
 	@media (max-width:$mobile){
 		grid-template-columns: 1fr 1fr; 
 	}	
+
+	&__image {
+		object-fit: cover;
+		max-width: 100%;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__item {
+      position: relative; 
+      line-height: 0;  
+      transition-duration: 0.5s;
+   }
+
+   &__item:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;      ;
+      background-color: rgba(0,0,0,.5);
+      opacity: 0;
+      z-index: 2; 
+      transition: opacity 0.3s ease 0.1s; 
+   }
+
+   &__item:before {
+      content: "\e93c";
+		@extend %ic;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: rem(25);
+		color: $mainColorLight;
+      opacity: 0;
+      z-index: 3;
+      transition: opacity 0.3s ease 0.1s;
+   }
+
+   &__item:hover::after,
+   &__item:hover::before {
+      opacity: 1;
+   }
 }
 
-.gallery__image {
-	object-fit: cover;
-	max-width: 100%;
-	width: 100%;
-	height: 100%;
+
+// настройки lightGallery
+// отключение значка загрузки 
+
+a#lg-download-1 {
+	display: none;
 }
+
+// отключение подписи фото из alt
+
+.lg-sub-html {
+	display: none;
+}
+
+

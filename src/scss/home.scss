@@ -1,9 +1,6 @@
 // home
 .home {
 	
-	p.text:not(:last-child) {
-		margin-bottom: em(25, 18);		
-	}
 	// .home__offer
 
 	&__offer {
