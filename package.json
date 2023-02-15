@@ -48,18 +48,18 @@
 		"html-webpack-plugin": "latest",
 		"inputmask": "latest",
 		"js-datepicker": "latest",
-		"lightgallery": "latest",
+		"lightmain-gallery": "^2.7.1",
 		"load-plugins": "latest",
 		"mini-css-extract-plugin": "2.4.7",
-		"nouislider": "latest",
+		"nouislider": "^15.7.0",
 		"pug": "latest",
 		"pug-loader": "latest",
-		"sass": "latest",
+		"sass": "^1.58.0",
 		"sass-loader": "latest",
 		"smooth-scroll": "latest",
 		"string-replace-loader": "latest",
 		"style-loader": "latest",
-		"swiper": "latest",
+		"swiper": "^9.0.5",
 		"terser-webpack-plugin": "latest",
 		"tippy.js": "latest",
 		"transform-runtime": "0.0.0",
@@ -72,6 +72,6 @@
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
-		"simplebar": "latest"
+		"simplebar": "^6.2.1"
 	}
 }
