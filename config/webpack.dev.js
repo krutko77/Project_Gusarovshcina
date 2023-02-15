@@ -51,12 +51,12 @@ const config = {
 		static: paths.build,
 		open: true,
 		compress: true,
-		port: 8080,
+		port: 'auto',
 		hot: true,
-		host: 'localhost', // localhost
+		host: 'local-ip', // localhost
 
-		// Расскоментировать на слабом ПК
-		// (в режиме разработчика, папка с результаттом будет создаваться на диске)
+		// Розкоментувати на слабкому ПК
+		// (в режимі розробника папка результатом (dist) буде створюватися на диску)
 		/*
 		devMiddleware: {
 			writeToDisk: true,

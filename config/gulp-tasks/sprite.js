@@ -21,13 +21,13 @@ export const sprite = () => {
 				},
 				transform: [
 					{
-						svg: {
+						/*svgo: {
 							plugins: [
 								{ removeXMLNS: true },
 								{ convertPathData: false },
 								{ removeViewBox: false },
 							]
-						}
+						}*/
 					}
 				]
 			},

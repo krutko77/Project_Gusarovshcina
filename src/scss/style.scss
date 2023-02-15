@@ -9,7 +9,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Merriweather:regular,700,900&display=swap);
 // Подключить если есть локальные файлы шрифтов
-//@import "fonts/fonts";
+// @import "fonts/fonts";
 
 // Подключение иконочных шрифтов ==============================================================================================================================================================================================================================================================================
 // Подключить если есть файл иконочного шрифта
@@ -161,7 +161,7 @@ body {
 @import "home";
 // @import "active";
 @import "gallery";
-// @import "main-house";
-// @import "guest-house";
-// @import "sketches";
+@import "main-house";
+@import "guest-house";
+@import "sketches";
 @import "bath";
