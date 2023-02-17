@@ -132,7 +132,7 @@
     .lg-close {
         &:after {
             content: '\e070';
-        }
+        }		
     }
     .lg-maximize {
         font-size: 22px;
@@ -145,6 +145,7 @@
         &:after {
             content: '\e0f2';
         }
+		  opacity: 0;
     }
 }
 
