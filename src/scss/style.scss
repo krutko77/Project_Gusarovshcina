@@ -159,9 +159,11 @@ body {
 
 // Подключение стилей отдельных страниц
 @import "home";
-// @import "active";
+@import "active";
 @import "gallery";
 @import "main-house";
 @import "guest-house";
 @import "sketches";
 @import "bath";
+
+

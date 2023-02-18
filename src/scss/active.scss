@@ -1,22 +1,22 @@
 // active
 
 .active {
-	padding-top: 70px;
-
-	@media (max-width:$mobile){
-		padding-top: 50px;		 
-	}
 		// .active__header
 
 		&__header {
-		background: url("./../img/gallery/bg-gallery-20.jpg") 0 0 no-repeat;
+		background: url("./../img/active/bg-header-active-20.jpg") 0 0 
+		no-repeat;
 		background-size: cover;
-		min-height: 400px;
+		min-height: rem(350);
 		color: $mainColorLight;
 		display: flex;	
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;	
+		align-items: center;
+
+			@media (max-width:$pc){
+				min-height: calc(rem(220) + 130*((100vw - 478px) / (1200 - 478)));
+			}
 		}
 
 		// .active__catalog

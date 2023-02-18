@@ -5,3 +5,10 @@
 	font-weight: 400;
 	font-style: normal;
 }
+@font-face {
+	font-family: lg;
+	font-display: swap;
+	src: url("../fonts/lg.woff2") format("woff2"), url("../fonts/lg.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
