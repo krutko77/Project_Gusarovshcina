@@ -7,8 +7,10 @@
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page main-gallery">
-				<section class="main-gallery__header header-main-gallery">
-					<h1 class="header-main-gallery__title title center-text">Галерея</h1>
+				<section class="main-gallery__header no-padding bg-gallery-header">
+					@@include('html/_page-header.htm',{
+						"title":"Галерея"
+					})
 				</section>
 				<section class="main-gallery__content content-main-gallery breadcrumbs-section">
 					<div class="content-main-gallery__container">

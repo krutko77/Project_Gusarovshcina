@@ -7,8 +7,10 @@
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page sketches">
-				<section class="sketches__header header-sketches main-gallery__header">
-					<h1 class="header-sketches__title title center-text">Зарисовки усадьбы</h1>
+				<section class="sketches__header no-padding bg-gallery-header">
+					@@include('html/_page-header.htm',{
+						"title":"Зарисовки усадьбы"
+					})
 				</section>
 				<section class="sketches__content content-sketches breadcrumbs-section">
 					<div class="content-sketches__container">
@@ -69,6 +71,9 @@
 							</a>
 							<a class="gallery__image gallery__item" href="./img/gallery/sketches/full/sketches-10.jpg">
 								<img class="gallery__image" src="@img/gallery/sketches/small/sketches-small-10.jpg" alt="Зарисовки усадьбы">
+							</a>
+							<a class="gallery__image gallery__item" href="./img/gallery/sketches/full/sketches-10-1.jpg">
+								<img class="gallery__image" src="@img/gallery/sketches/small/sketches-small-10-1.jpg" alt="Зарисовки усадьбы">
 							</a>
 							<a class="gallery__image gallery__item" href="./img/gallery/sketches/full/sketches-11.jpg">
 								<img class="gallery__image" src="@img/gallery/sketches/small/sketches-small-11.jpg" alt="Зарисовки усадьбы">

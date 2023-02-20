@@ -7,12 +7,14 @@
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page active">
-				<section class="active__header header-active">					
-					<h1 class="header-active__title title center-text">Активный отдых</h1>
+				<section class="active__header no-padding">
+					@@include('html/_page-header.htm',{
+						"title":"Активный отдых"
+					})
 				</section>
-				<section class="active__catalog catalog-active breadcrumbs-section">
-					<div class="catalog-active__container">
-						<nav class="catalog-active__breadcrumbs breadcrumbs-section text">
+				<section class="active__content content-active breadcrumbs-section">
+					<div class="content-active__container">
+						<nav class="content-active__breadcrumbs text">
 							<ul class="breadcrumbs__list">
 								<li class="breadcrumbs__item">
 									<a href="" class="breadcrumbs__link text-link">Главная</a>
@@ -24,8 +26,26 @@
 									<span class="breadcrumbs__current">Активный отдых</span>
 								</li>
 							</ul>
-						</nav>
-					</div>					
+						</nav>						
+						<h2 class="active__subtitle">Велосипеды</h2>
+						<div class="active__img-box float-right">
+							<img class="active__img" src="@img/active/active-1.jpg" alt="Велосипеды">
+						</div>
+						<p class="content-active__text text">
+							Предлагаем нашим отдыхающим велосипеды для интересных путешествий по специально разработанным велосипедным маршрутам. 
+						</p>
+						<p class="content-active__text text">К примеру, велосипедный 	 маршрут по вольерно-прудовому хозяйству, протяженность 7 км. 
+							Увлекательная прогулка, c возможностью понаблюдать за животными в естественной среде их обитания. На подкормочных площадках питаются зубры, лоси, олени, косули. По ходу маршрута установлены аншлаги с информацией об обитателях вольер. А с высоты наблюдательной вышки открывается живописная панорама бескрайних просторов – подходящее место, чтобы сделать хорошее фото на память.
+						</p>
+						<p class="content-active__text text">
+							Или маршрут «Зеленый Путь» – 32 км. Маршрут для туристов со средней и обычной степенью  физической  подготовки. Велосипедная дорожка тянется вдоль берега озер Неспиш,  Струсто, Ельно, Дривяты мимо полей, лесов. Отличный маршрут, чтобы испытать себя. 
+						</p>
+						<p class="content-active__text text">
+							Более подробно с различными велосипедными маршрутами по Браславским озёрам можно знакомиться <a class="active__link text-link" href="https://braslavpark.by/otdykh-i-turizm/aktivnyy-otdykh/turisticheskie-marshruty/velosipednye-marshruty/">здесь</a>.
+						</p>
+					
+						
+					</div>
 				</section>
 				<section class="active__action action">
 					@@include('html/_action-block.htm',{})
@@ -34,7 +54,6 @@
 			@@include('html/_footer.htm',{})
 		</div>
 	   @@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-		
+		@@include('html/_js.htm',{})		
 	</body>
 </html>

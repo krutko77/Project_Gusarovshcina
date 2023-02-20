@@ -7,8 +7,10 @@
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page bath">
-				<section class="bath__header header-bath main-gallery__header">
-					<h1 class="header-bath__title title center-text">Русская баня</h1>
+				<section class="bath__header no-padding bg-gallery-header">
+					@@include('html/_page-header.htm',{
+						"title":"Баня"
+					})
 				</section>
 				<section class="bath__content content-bath breadcrumbs-section">
 					<div class="content-bath__container">

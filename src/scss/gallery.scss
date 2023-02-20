@@ -2,23 +2,6 @@
 
 .main-gallery {
 	
-		// .main-gallery__header
-
-		&__header {
-		background: url("./../img/gallery/bg-gallery-20.jpg") 0 0 no-repeat;
-		background-size: cover;
-		min-height: rem(350);
-		color: $mainColorLight;
-		display: flex;	
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-			@media (max-width:$pc){
-				min-height: calc(rem(220) + 130*((100vw - 478px) / (1200 - 478)));
-			}
-		}
-
 		// .main-gallery__content
 
 		&__content {

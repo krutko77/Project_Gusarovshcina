@@ -29,6 +29,10 @@ section.breadcrumbs-section {
   }
 }
 
+section.no-padding {
+	padding: 0;
+}
+
 h1 {
 	font-size: rem(60);
 		
@@ -70,6 +74,24 @@ h4 {
 
 p:not(:last-child) {
 	margin-bottom: em(20, 18);
+}
+
+.page-header {
+	background-size: cover;
+	min-height: rem(320);
+	color: $mainColorLight;
+	display: flex;	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+		@media (max-width:$pc){
+			min-height: calc(rem(220) + 100*((100vw - 478px) / (1200 - 478)));
+		}
+}
+
+.bg-gallery-header {
+	background: url("./../img/gallery/bg-gallery-20.jpg") 0 0 no-repeat;
 }
 
 .title {
