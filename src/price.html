@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Услуги и цены усадьбы Гусаровщина"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page price">
+				<section class="price__header no-padding">
+					@@include('html/_page-header.htm',{
+						"title":"Услуги и цены"
+					})
+				</section>
+				<section class="price__content content-price breadcrumbs-section">
+					<div class="content-price__container">
+						<nav class="content-price__breadcrumbs text">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a href="" class="breadcrumbs__link text-link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__icon"></span>
+								</li>
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__current">Услуги и цены</span>
+								</li>
+							</ul>
+						</nav>
+						<h3 class="price__subtitle">Аренда основного дома</h3>
+						<h3 class="price__subtitle">Аренда гостевого дома</h3>
+						<h3 class="price__subtitle">Баня</h3>
+						<h3 class="price__subtitle">Сапборд</h3>
+						<h3 class="price__subtitle">Копчёная рыба</h3>
+						<h3 class="price__subtitle">Трансфер</h3>
+						<p class="text">Пользование велосипедами, лодками, гамаками, батутами, шезлонгами бесплатно.</p>
+						<p class="text">* цены изменяются в зависимости от сезона и количества отдыхающих. Пожалуйста, уточните стоимость, сообщив нам количество гостей, а так же предпочтительные даты прибытия и убытия.</p>
+						<button class="price__button button text">Уточнить стоимость</button>
+					</div>
+				</section>
+				<section class="price__action action">
+					@@include('html/_action-block.htm',{})
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+	   @@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})		
+	</body>
+</html>

@@ -153,8 +153,8 @@ p:not(:last-child) {
 
 // Общие стили для всех кнопок сайта
 .button, .book-button {
-	display: inline-block;
-	padding: 10px 24px 7px;
+	display: block;
+	padding: em(10,18) em(24, 18) em(7, 18);
 	border-radius: 4px;
 	font-weight: 500;
 	letter-spacing: 1px;
@@ -166,8 +166,8 @@ p:not(:last-child) {
 	border: solid 2px $themeColor;
 	background-color: transparent;
 	color: $themeColor;
-	padding: 10px 46px 7px;
-
+	padding: em(10,18) em(46, 18) em(7, 18);
+	
 	&:hover {
 		background-color: $themeColor;
 		color: $mainColorLight;
