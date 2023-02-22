@@ -21,8 +21,7 @@
 		margin: em(30, 18) auto 0;
 	}
 }
-.no-padding {
-}
+
 .content-price {
 
 	// .content-price__container
@@ -37,7 +36,34 @@
 	}
 }
 
-.text-link {
+.content-price {
+
+		// .content-price__table
+
+		&__table {
+			max-width: rem(800);
+			// margin: 0 auto;
+			display: grid;
+			grid-template-columns: 70% 1fr;
+		}
 }
-.action {
+.grid {
+	
+		// .grid__key
+
+		&__key {
+		}
+
+		// .grid__value
+
+		&__value {
+		}
 }
+.grid {
+
+		// .grd__item
+
+		&__item {
+		}
+}
+
