@@ -94,24 +94,6 @@
 		max-width: rem(600);
 	}
 
-	// .about-home__img-box
-
-	&__img-box {
-		width: 30%;
-
-		@media (max-width:$tablet){
-			width: 40%;
-		}
-
-		@media (max-width:$mobile){
-			 width: 45%; 
-		}
-	
-		@media (max-width:$mobileSmall){
-			width: 100%; 
-		}
-	}
-
 	// .about-home__img
 
 	&__img {

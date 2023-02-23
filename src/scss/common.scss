@@ -233,3 +233,24 @@ button:active, .button:active, .book-button:active {
 		margin: 0px em(7, 14);
 	}
 }
+
+.img-box {
+	width: 30%;
+
+	@media (max-width:$tablet){
+		width: 40%;
+	}
+
+	@media (max-width:$mobile){
+		 width: 45%; 
+	}
+
+	@media (max-width:$mobileSmall){
+		width: 100%; 
+	}
+}
+
+// img {
+// 	width: 100%;
+// 	object-fit: cover;
+// }

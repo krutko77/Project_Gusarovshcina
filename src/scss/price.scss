@@ -8,12 +8,6 @@
 		background: url("./../img/price/bg-header-price.jpg") 0 0 no-repeat;
 	}
 
-	// .price__content
-
-	&__content {
-		// background: url("./../img/price/bg-price.jpg") 0 0 no-repeat;
-	}
-
 	// .price__action
 
 	&__button {
@@ -27,7 +21,7 @@
 	// .content-price__breadcrumbs
 
 	&__breadcrumbs {
-		margin-bottom: 50px;
+		margin-bottom: em(50, 18);
 	}
 
 		// .content-price__wrapper
@@ -42,13 +36,13 @@
 
 		&__table {
 			max-width: rem(800);
-			min-width: 380px;
+			min-width: rem(360);
 			display: grid;
 			grid-template-columns: 70% 1fr;
 			border: 1px solid $themeColor;			
 
 			@media (max-width:$mobile){
-				grid-template-columns: 57% 1fr;
+				grid-template-columns: 59% 1fr;
 			}			
 		}
 }
@@ -59,7 +53,7 @@
 			padding: rem(7) rem(20);
 			
 			@media (max-width:$mobileSmall){
-				padding: rem(4) rem(10);
+				padding: rem(4) rem(7);
 		  }
 		}
 
@@ -78,7 +72,7 @@
 			line-height: math.div(30, 26);
 
 			@media (max-width:$pc){
-				font-size:  calc(rem(20) + 6*((100vw - 478px) / (1200 - 478)));				
+				font-size:  calc(rem(19) + 7*((100vw - 478px) / (1200 - 478)));				
 			}
 		}
 

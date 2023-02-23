@@ -23,24 +23,6 @@
 	  }
 	}
 
-	// .active__img-box
-
-	&__img-box {
-		width: 30%;
-
-		@media (max-width:$tablet){
-			width: 40%;
-		}
-
-		@media (max-width:$mobile){
-			 width: 45%; 
-		}
-	
-		@media (max-width:$mobileSmall){
-			width: 100%; 
-		}
-	}
-
 	// .active__img
 
 	&__img {
