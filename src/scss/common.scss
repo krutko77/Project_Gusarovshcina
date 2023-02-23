@@ -131,6 +131,10 @@ p:not(:last-child) {
 	}
 }
 
+.clearfix {
+	display: flow-root;
+}
+
 .link {
 	transition: color 0.3s ease;
 }
