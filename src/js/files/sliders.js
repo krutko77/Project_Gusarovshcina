@@ -32,13 +32,14 @@ function initSliders() {
 		new Swiper('.swiper', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation],
+			modules: [Navigation, Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
-			spaceBetween: 0,
+			spaceBetween: 30,
 			autoHeight: true,
 			speed: 800,
+			
 
 			//touchRatio: 0,
 			//simulateTouch: false,
@@ -79,25 +80,25 @@ function initSliders() {
 
 			// Брейкпоинты
 			
-			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
-				},
-				768: {
-					slidesPerView: 1,
-					spaceBetween: 20,
-				},
-				992: {
-					slidesPerView: 2,
-					spaceBetween: 20,
-				},
-				// 1268: {
-				// 	slidesPerView: 4,
-				// 	spaceBetween: 30,
-				// },
-			},
+			// breakpoints: {
+			// 	320: {
+			// 		slidesPerView: 1,
+			// 		spaceBetween: 0,
+			// 		autoHeight: true,
+			// 	},
+			// 	768: {
+			// 		slidesPerView: 1,
+			// 		spaceBetween: 20,
+			// 	},
+			// 	992: {
+			// 		slidesPerView: 2,
+			// 		spaceBetween: 30,
+			// 	},
+			// 	// 1268: {
+			// 	// 	slidesPerView: 4,
+			// 	// 	spaceBetween: 30,
+			// 	// },
+			// },
 			
 			// События
 			on: {

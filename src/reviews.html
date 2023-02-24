@@ -6,7 +6,7 @@
 	<body>
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
-			<main class="page reviews">
+			<main class="page reviews" data-watch="navigator">
 				<section class="reviews__header no-padding">
 					@@include('html/_page-header.htm',{
 						"title":"Отзывы"
@@ -34,30 +34,28 @@
 								</div>
 								<p class="content-reviews__text text">Этот раздел — копилка искренних отзывов о нашей усадьбе. У нас заведена специальная книга отзывов, в которой наши гости оставляют свои впечатления о проведенном времени в усадьбе Гусаровщина. Особенно ценно, что отзывы написаны на бумаге, а не просто пересланы в электронном виде.</p>
 								<p class="content-reviews__text text">Благодарим каждого за обратную связь, нам очень ценно ваше мнение!</p>
-							</div>
-							<!-- Оболочка слайдера -->
+							</div>						
+								<!-- Оболочка слайдера -->
 							<div class="reviews__slider swiper">
 								<!-- Двигающееся часть слайдера -->
-								<div class="reviews__wrapper swiper-wrapper">
+								<div class="swiper__wrapper swiper-wrapper">
 									<!-- Слайд -->
-									<div class="reviews__slide swiper-slide"><img src="@img/reviews/1.jpg" alt="отзыв"></div>
-									<div class="reviews__slide swiper-slide"><img src="@img/reviews/1.jpg" alt="отзыв"></div>
-									<div class="reviews__slide swiper-slide"><img src="@img/reviews/1.jpg" alt="отзыв"></div>
-									<div class="reviews__slide swiper-slide"><img src="@img/reviews/1.jpg" alt="отзыв"></div>
-									<div class="reviews__slide swiper-slide"><img src="@img/reviews/1.jpg" alt="отзыв"></div>
-									<div class="reviews__slide swiper-slide"><img src="@img/reviews/1.jpg" alt="отзыв"></div>
-									<div class="reviews__slide swiper-slide"><img src="@img/reviews/1.jpg" alt="отзыв"></div>
-									<div class="reviews__slide swiper-slide"><img src="@img/reviews/1.jpg" alt="отзыв"></div>
-									<div class="reviews__slide swiper-slide"><img src="@img/reviews/1.jpg" alt="отзыв"></div>
-									
+									<div class="swiper__slide swiper-slide"><img class="swiper__image" src="@img/reviews/1.jpg" alt="отзыв"></div>
+									<div class="swiper__slide swiper-slide"><img class="swiper__image" src="@img/reviews/1.jpg" alt="отзыв"></div>
+									<div class="swiper__slide swiper-slide"><img class="swiper__image" src="@img/reviews/1.jpg" alt="отзыв"></div>
+									<div class="swiper__slide swiper-slide"><img class="swiper__image" src="@img/reviews/1.jpg" alt="отзыв"></div>
+									<div class="swiper__slide swiper-slide"><img class="swiper__image" src="@img/reviews/1.jpg" alt="отзыв"></div>
+									<div class="swiper__slide swiper-slide"><img class="swiper__image" src="@img/reviews/1.jpg" alt="отзыв"></div>
+									<div class="swiper__slide swiper-slide"><img class="swiper__image" src="@img/reviews/1.jpg" alt="отзыв"></div>
+									<div class="swiper__slide swiper-slide"><img class="swiper__image" src="@img/reviews/1.jpg" alt="отзыв"></div>
+									<div class="swiper__slide swiper-slide"><img class="swiper__image" src="@img/reviews/1.jpg" alt="отзыв"></div>									
 								</div>
-								<!-- Если нужна пагинация -->
+							<!-- Если нужна пагинация -->
 								<div class="swiper-pagination"></div>
 								<!-- Если нужна навигация (влево/вправо) -->
 								<button type="button" class="swiper-button-prev"></button>
 								<button type="button" class="swiper-button-next"></button>
-								
-							</div>
+							</div>							
 						</div>	
 					</div>
 				</section>
