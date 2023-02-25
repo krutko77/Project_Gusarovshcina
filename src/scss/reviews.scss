@@ -6,19 +6,17 @@
 
 	&__header {
 		background: url("./../img/reviews/bg-header-reviews.jpg") 0 0 no-repeat;
+		background-size: cover;
 	}
 
 	// .reviews__content
 
 	&__content {
-		background: url("./../img/reviews/bg-reviews.jpg") 0 0 no-repeat;
+		background: url("./../img/reviews/bg-reviews.jpg") 50% no-repeat;
+		background-size: cover;
 		border-bottom: solid 2px $themeColor;
 
-		padding-bottom: rem(40);
-
-		@media (max-width:$pc){
-			padding-bottom: calc(rem(20) + 20*((100vw - 478px) / (1200 - 478)));
-		}		
+		padding-bottom: rem(40);		
 	}
 }
 
@@ -43,16 +41,26 @@
 		margin-bottom: rem(70);
 
 		@media (max-width:$pc) {
-			margin-bottom: calc(rem(30) + 40*((100vw - 478px) / (1200 - 478))); 
+			margin-bottom: calc(rem(40) + 30*((100vw - 478px) / (1200 - 478))); 
 		}
+	}
+}
+
+.swiper-slide {
+	text-align: center;	
+}
+
+.swiper__img-wrapper {
+	display: inline-block;
+	padding: rem(10);
+	background-color: $mainColorLight;
+
+	@media (max-width:$pc){
+		padding: calc(rem(5) + 5*((100vw - 478px) / (1200 - 478))); 
 	}
 }
 
 .swiper__image {
 	max-width: 100%;
 	object-fit: cover;	
-}
-
-.swiper-slide {
-	text-align: center;
 }

@@ -77,7 +77,6 @@ p:not(:last-child) {
 }
 
 .page-header {
-	background-size: cover;
 	min-height: rem(320);
 	color: $mainColorLight;
 	display: flex;	
@@ -92,6 +91,7 @@ p:not(:last-child) {
 
 .bg-gallery-header {
 	background: url("./../img/gallery/bg-gallery-20.jpg") 0 0 no-repeat;
+	background-size: cover;
 }
 
 .title {
@@ -250,7 +250,3 @@ button:active, .button:active, .book-button:active {
 	}
 }
 
-// img {
-// 	width: 100%;
-// 	object-fit: cover;
-// }

@@ -81,6 +81,7 @@
 
 .about-home {
 	background: url("../img/bg-home-about.jpg") 0 0;
+	background-size: cover;
 
 	&__container {
 		display: flex;
@@ -258,6 +259,7 @@
 .action {
 	// background-color: $bgColor;
 	background: url("../img/bg-home-action.jpg") 0 0;
+	background-size: cover;
 	
 	// .action-home__title
 
