@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Контакты усадьбы Гусаровщина"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page contact" data-watch="navigator">
+				<section class="contact__header no-padding">
+					@@include('html/_page-header.htm',{
+						"title":"Контакты"
+					})
+				</section>
+				<section class="contact__content content-contact breadcrumbs-section">
+					<div class="content-contact__container">
+						<nav class="content-contact__breadcrumbs text">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a href="" class="breadcrumbs__link text-link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__icon"></span>
+								</li>
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__current">Контакты</span>
+								</li>
+							</ul>
+						</nav>
+						<div class="content-contact__info info-contact">
+							<p class="info-contact__text text">Агроусадьба "Усадьба Гусаровщина"</p>
+							<p class="info-contact__text text">ИП Дьякович Олег Иванович, УНП 300059685</p>
+							<div class="info-contact__block">
+								<div class="info-contact__box">
+									<svg class="info-contact__icon">
+										<use xlink:href="@img/icons/icons.svg#svg-phone-icon"></use>
+									</svg>
+									<a class="info-contact__link text-link" href="tel:+375297118725">+375 (29) 711-87-25</a>
+								</div>
+								<div class="info-contact__box">
+									<svg class="info-contact__icon">
+										<use xlink:href="@img/icons/icons.svg#svg-email-icon"></use>
+									</svg>
+									<a class="info-contact__link text-link" href="mailto:oleg0870@icloud.com">oleg0870@icloud.com</a>
+								</div>
+								<ul class="info-contact__social-list social-list">
+									<li class="social-list__item"><a class="social-list__link
+										" href="https://telegram.me/Oleg0870Oleg" target="_blank">
+										<svg class="social-list__icon">
+											<use xlink:href="@img/icons/icons.svg#svg-telegram-icon"></use>
+										</svg></a>
+									</li>
+									<li class="social-list__item"><a class="social-list__link
+										" href="viber://chat?number=375297118725">
+										<svg class="social-list__icon">
+											<use xlink:href="@img/icons/icons.svg#svg-viber-icon"></use>
+										</svg></a>
+									</li>
+									<li class="social-list__item"><a class="social-list__link
+										" href="whatsapp://send?phone=375297118725">
+										<svg class="social-list__icon">
+											<use xlink:href="@img/icons/icons.svg#svg-whatsapp-icon"></use>
+										</svg></a>
+									</li>
+								</ul>
+								<div class="info-contact__box">
+									<svg class="info-contact__icon">
+										<use xlink:href="@img/icons/icons.svg#svg-location-icon"></use>
+									</svg>
+									<span class="iinfo-contact__text text">Витебская область, Браславский р-н, хутор Гусаровщина</span>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</section>
+				<section class="contact__action action">
+					@@include('html/_action-block.htm',{})
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+	   @@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})		
+	</body>
+</html>
