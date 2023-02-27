@@ -16,30 +16,14 @@
 		background-size: cover;
 		border-bottom: solid 2px $themeColor;
 	}
-
-	// .contact__icon
-
-	&__icon {
-	}
-
 }
 
 .content-contact {
-
-	// .content-contact__container
-
-	&__container {
-	}
 
 	// .content-contact__breadcrumbs
 
 	&__breadcrumbs {
 		margin-bottom: em(50, 18);
-	}
-
-	// .content-contact__info
-
-	&__info {
 	}
 }
 
@@ -47,12 +31,8 @@
 
 	// .info-contact__text
 
-	&__text {
-	}
-
-	// .info-contact__block
-
-	&__block {
+	&__map {
+		max-width: rem(700);
 	}
 
 	// .info-contact__box
@@ -61,7 +41,7 @@
 		margin-bottom: rem(20); 
 	
 		@media (max-width:$tablet){
-			 margin-bottom: rem(10); 
+			 margin-bottom: rem(15); 
 		}
 	}
 
@@ -69,7 +49,7 @@
 		width: em(16, 16);
 		height: em(16, 16);
 		vertical-align: middle;
-		margin-right: em(5, 16);
+		margin-right: em(3, 16);
 		fill: $accentColor;
 	}
 
