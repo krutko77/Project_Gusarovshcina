@@ -36,6 +36,8 @@ import '@scss/libs/gallery/lightgallery.scss';
 // Все стили
 // import '@scss/libs/gallery/lightgallery-bundle.scss';
 
+
+
 // Запуск
 const galleries = document.querySelectorAll('[data-gallery]');
 if (galleries.length) {
@@ -47,11 +49,18 @@ if (galleries.length) {
 				// plugins: [lgZoom, lgThumbnail],
 				licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
 				speed: 500,
+				mobileSettings: {
+					controls: true,
+					showCloseIcon: true,
+					download: false,
+					rotate: true
+	  			}
 			})
 		})
 	});
 	// Добавляем в объект модулей
 	flsModules.gallery = galleyItems;
+
 }
 
 
