@@ -93,7 +93,11 @@
 
 	&__actions {
 		line-height: math.div(28, 16);
-		margin-bottom: em(10, 16);		
+		margin-bottom: rem(10);
+
+		@media (max-width:$tablet) {
+			margin-bottom: rem(20);
+		}	
 	}
 
 	// .right-block__social-list

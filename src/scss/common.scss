@@ -250,3 +250,7 @@ button:active, .button:active, .book-button:active {
 	}
 }
 
+// отключение значка загрузки
+a#lg-download-1 {
+	display: none;
+}

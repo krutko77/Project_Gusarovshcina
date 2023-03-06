@@ -32,11 +32,7 @@
 	// .info-contact__box
 
 	&__box {
-		margin-bottom: rem(20); 
-	
-		@media (max-width:$tablet){
-			 margin-bottom: rem(15); 
-		}
+		margin-bottom: rem(20); 		
 	}
 
 	&__icon {
