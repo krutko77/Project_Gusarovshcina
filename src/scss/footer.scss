@@ -9,7 +9,7 @@
 	&__top {
 		display: flex;
 		justify-content: space-between;
-		padding: em(20, 16) 0;
+		padding: em(30, 16) 0;
 
 		@media (max-width:$tablet) {
 			flex-direction: column;

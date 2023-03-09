@@ -13,20 +13,47 @@
 }
 
 section {
-	padding: rem(70) 0 rem(70);
+	padding: rem(90) 0 rem(90);
 
 	@media (max-width:$pc){
-		 padding-top: calc(rem(50) + 20*((100vw - 478px) / (1200 - 478)));
-		 padding-bottom: calc(rem(50) + 20*((100vw - 478px) / (1200 - 478)));
+		 padding-top: calc(rem(50) + 40*((100vw - 478px) / (1200 - 478)));
+		 padding-bottom: calc(rem(50) + 40*((100vw - 478px) / (1200 - 478)));
 	}
 }
 
 section.breadcrumbs-section {
-	padding-top: rem(20);
+	padding-top: rem(30);
 	
 	@media (max-width:$pc){
-		padding-top: calc(rem(15) + 5*((100vw - 478px) / (1200 - 478)));		
+		padding-top: calc(rem(15) + 15*((100vw - 478px) / (1200 - 478)));		
   }
+}
+
+.breadcrumbs {
+	white-space: nowrap;
+	margin-bottom: rem(45);
+	
+	@media (max-width:$pc){
+		margin-bottom: calc(rem(25) + 20*((100vw - 478px) / (1200 - 478)));		
+	}
+
+	// .breadcrumbs__list
+	&__list {
+		display: flex;
+	}
+
+	// .breadcrumbs__link
+	&__link {
+		display: flex;
+		align-items: center;		
+	}
+	
+	&__icon::before {
+		content: "\e902";
+		@extend %ic;
+		font-size: rem(14);
+		margin: 0px em(7, 14);
+	}
 }
 
 section.no-padding {
@@ -203,35 +230,6 @@ button:active, .button:active, .book-button:active {
 
 .margin-bottom {
 	margin-bottom: em(25, 18);
-}
-
-.breadcrumbs {
-	white-space: nowrap;
-	margin-bottom: rem(35);
-	
-	@media (max-width:$pc){
-		margin-bottom: calc(rem(25) + 10*((100vw - 478px) / (1200 - 478)));		
-	}
-
-	// .breadcrumbs__list
-	&__list {
-		display: flex;
-	}
-	// .breadcrumbs__item
-	&__item {
-	}
-	// .breadcrumbs__link
-	&__link {
-		display: flex;
-		align-items: center;		
-	}
-	
-	&__icon::before {
-		content: "\e902";
-		@extend %ic;
-		font-size: rem(14);
-		margin: 0px em(7, 14);
-	}
 }
 
 .img-box {
