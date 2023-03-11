@@ -152,11 +152,11 @@ body {
 
 // Подключение стилей общих элементов проекта
 @import "common";
-@import "page-header";
-@import "action-block";
 
 // Подключение стилей отдельных блоков
 @import "header";
+@import "page-header";
+@import "action-block";
 @import "footer";
 
 // Подключение стилей отдельных страниц
