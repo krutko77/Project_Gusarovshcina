@@ -80,11 +80,11 @@ h2 {
 }
 
 h3 {
-	font-size: rem(34);
+	font-size: rem(32);
 	margin-bottom: rem(20);
 
 	@media (max-width:$pc){
-		font-size:  calc(rem(22) + 12*((100vw - 478px) / (1200 - 478)));
+		font-size:  calc(rem(24) + 8*((100vw - 478px) / (1200 - 478)));
 		margin-bottom: calc(rem(10) + 10*((100vw - 478px) / (1200 - 478)));
 	}
 }
@@ -101,19 +101,6 @@ h4 {
 
 p:not(:last-child) {
 	margin-bottom: em(20, 18);
-}
-
-.page-header {
-	min-height: rem(320);
-	color: $mainColorLight;
-	display: flex;	
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-		@media (max-width:$pc){
-			min-height: calc(rem(220) + 100*((100vw - 478px) / (1200 - 478)));
-		}
 }
 
 .bg-gallery-header {
