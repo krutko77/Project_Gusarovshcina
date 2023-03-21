@@ -108,6 +108,17 @@ p:not(:last-child) {
 	background-size: cover;
 }
 
+.page-header__title {
+	opacity: 0;
+	transform: translateY(50px);
+}
+
+.page-header__title._watcher-view {
+	opacity: 1;
+	transform: translateY(0);
+	transition: transform 1.3s ease 0s, opacity 1.3s ease 0s;
+}
+
 .title {
 	text-transform: uppercase;
 	font-family: "Merriweather", serif;

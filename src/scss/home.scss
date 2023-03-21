@@ -62,6 +62,8 @@
 		font-weight: 900;		
 		margin-bottom: em(15, 100);
 		text-shadow: 5px 5px 30px $mainColor;
+		opacity: 0;
+		transform: translateY(100px);		
 		
 		@media (max-width:$mobileSmall){
 			margin-bottom: em(10,34);
@@ -76,6 +78,21 @@
 		font-weight: 500;
 		line-height: math.div(45 ,30);
 		text-shadow: 5px 5px 30px #000, -5px -5px 30px #000;
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	&__title._watcher-view, &__descripton._watcher-view {
+		opacity: 1;
+		transform: translateY(0);		
+	}
+
+	&__title._watcher-view {
+		transition: transform 1.3s ease 0s, opacity 1.3s ease 0s;
+	}
+
+	&__descripton._watcher-view {
+		transition: transform 1.2s ease 0.7s, opacity 1.2s ease 0.7s;
 	}
 }
 
