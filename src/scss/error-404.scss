@@ -1,0 +1,47 @@
+// error-404
+
+.error-404 {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__content{
+		text-align: center;		
+	}
+
+	
+	&__title {
+		margin-bottom: rem(30);
+		font-weight: 900;
+	}	
+
+	&__link {
+		display: inline-block;
+		border-radius: 4px;
+		font-weight: 500;
+		border: solid 2px $themeColor;
+		background-color: transparent;
+		color: $themeColor;
+		padding: em(10,18) em(46, 18) em(7, 18);
+		letter-spacing: 1px;
+		text-transform: uppercase;	
+		visibility: hidden;
+		transform: scale(0.5);
+
+		&:hover {
+			background-color: $themeColor;
+			color: $mainColorLight;
+		}
+	}	
+
+	&__link._watcher-view {
+		transition: color 0.3s, background-color 0.3s, transform 0.8s, visible 0.8s;
+		visibility: visible;
+		transform: scale(1);	
+	}
+}
+
+p.error-404__text {
+	margin-bottom: rem(40);
+}

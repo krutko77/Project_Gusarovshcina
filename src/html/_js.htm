@@ -1,3 +1,4 @@
+// Уведомление об использовании файлов cookie
 <script src="js/app.min.js"></script>
 <script type="text/javascript" id="cookieinfo" src="//cookieinfoscript.com/js/cookieinfo.min.js"
 	data-bg="#645862"
@@ -8,4 +9,12 @@
 	data-moreinfo=""
 	data-linkmsg="Соглашение"
 	data-close-text="Принимаю">
+</script>
+
+
+// Переключение на страницу благодорности после отправки формы CF7
+<script type="text/javascript">
+	document.addEventListener( 'wpcf7mailsent', function( event ) {
+		 location = 'https://gusarovshcina.by/stranitsa-blagodarnosti/';
+	}, false );
 </script>
