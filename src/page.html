@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Активный отдых на Браславcких озёрах в усадьбе Гусаровщина"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="page__header no-padding">
+					@@include('html/_page-header.htm',{
+						"title":"Правила проживания"
+					})
+				</section>
+				<div class="page__container">
+					<section class="page__breadcrumbs breadcrumbs-page breadcrumbs-section">
+						<nav class="breadcrumbs-page__nav text breadcrumbs">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a href="<?php echo home_url(); ?>" class="breadcrumbs__link text-link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__icon">Договор на оказание услуг</span>
+								</li>
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__current"><?php echo wp_title('', true, 'right');; ?></span>
+								</li>
+							</ul>
+						</nav>
+					</section>
+					<section class="page__content">
+			
+									
+					</section>
+				</div>	
+				<section class="page__action action">
+					@@include('html/_action-block.htm',{})
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+	   @@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})		
+	</body>
+</html>

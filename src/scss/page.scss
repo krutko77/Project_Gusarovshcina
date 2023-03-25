@@ -1,0 +1,15 @@
+// page
+
+.page {
+
+	// .page__header
+
+	&__header {
+		background: url("./../img/page/bg-header-page.jpg") 0 0 no-repeat;
+		background-size: cover;	
+	}
+}
+
+section.page__breadcrumbs {
+	padding-bottom: 0;
+}
