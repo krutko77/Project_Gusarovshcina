@@ -8,8 +8,16 @@
 		background: url("./../img/page/bg-header-page.jpg") 0 0 no-repeat;
 		background-size: cover;	
 	}
+
+	&__content {
+		text-align: center;
+	}
 }
 
 section.page__breadcrumbs {
 	padding-bottom: 0;
+}
+
+.breadcrumbs-page__nav {
+	margin-bottom: 0;
 }
