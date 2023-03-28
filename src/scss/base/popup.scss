@@ -11,9 +11,11 @@ body::after {
 	pointer-events: none;
 	z-index: 149;
 }
+
 .popup-show body::after {
 	opacity: 1;
 }
+
 .popup {
 	position: fixed;
 	top: 0;
@@ -22,35 +24,15 @@ body::after {
 	right: 0;
 	padding: rem(30) rem(10);
 	transition: visibility 0.8s ease 0s;
+	opacity: 1;
 	visibility: hidden;
-	pointer-events: none;
+	pointer-events: none;	
 }
-.popup_show {
-	z-index: 150;
-	visibility: visible;
-	overflow: auto;
-	pointer-events: auto;
-}
-.popup_show .popup__content {
-	visibility: visible;
-	transform: translate(0, 0);
-}
-.popup__wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	min-height: 100%;
-	flex: 1 1 auto;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.popup__content {
-	text-align: center;
+
+.popup__content {	
 	position: relative;
 	visibility: hidden;
-	transform: translate(0px, -200%);
+	transform: translateY(-700px);
 	transition: transform 0.8s ease 0s;
 	background-color: $mainColorLight;
 	padding: rem(40) rem(20) rem(30);
@@ -68,6 +50,30 @@ body::after {
 	right: rem(15);
 	width: rem(20);
 	height: rem(20);
+}
+
+.popup_show {
+	z-index: 150;
+	visibility: visible;
+	opacity: 1;
+	overflow: auto;
+	pointer-events: auto;
+}
+
+.popup_show .popup__content {
+	visibility: visible;
+	transform: translateX(0);
+}
+.popup__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+	flex: 1 1 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .popup__icon::before {
