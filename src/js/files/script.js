@@ -222,7 +222,7 @@ import { flsModules } from "./modules.js";
 
 
 		const inputText5 = document.getElementById("people3");
-		const nameText5 = document.getElementById("label-peopl32");
+		const nameText5 = document.getElementById("label-people3");
 
 		inputText5.addEventListener("focusin", (e) => {
 			nameText5.classList.add("active");
