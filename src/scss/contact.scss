@@ -73,7 +73,9 @@
 		transition: opacity 0.3s ease;
 	}
 
-	&__icon:hover {
-		opacity: 1;
-	}
+	@media (any-hover: hover) {
+		&__icon:hover {
+			opacity: 1;
+		}
+	}	
 }

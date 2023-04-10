@@ -164,9 +164,11 @@ p:not(:last-child) {
 	transition: color 0.3s ease;
 }
 
-.link:hover {
+@media (any-hover: hover) {
+	.link:hover {
 	text-decoration: underline;
 	text-underline-offset: 4px;
+}
 }
 
 .text-link {
@@ -174,10 +176,12 @@ p:not(:last-child) {
 	transition: color 0.3s ease;
 }
 
-.text-link:hover {
-	color: $linkHoverColor;
-	text-decoration: underline;
-	text-underline-offset: 4px;
+@media (any-hover: hover) {
+	.text-link:hover {
+		color: $linkHoverColor;
+		text-decoration: underline;
+		text-underline-offset: 4px;
+	}
 }
 
 // Общие стили для всех кнопок сайта
@@ -262,7 +266,3 @@ button:focus {
 	}
 }
 
-// отключение значка загрузки
-a#lg-download-1 {
-	display: none;
-}
