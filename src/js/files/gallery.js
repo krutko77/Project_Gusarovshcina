@@ -50,7 +50,7 @@ if (galleries.length) {
 				licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
 				speed: 500,
 				mobileSettings: {
-					controls: true,
+					controls: false,
 					showCloseIcon: true,
 					download: false,
 					rotate: true
