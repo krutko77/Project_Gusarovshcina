@@ -1,270 +1,268 @@
 // Заголовки, общие БЄМ блоки и проче...
 .display-none {
-	display: none;
-}
-
-.page {
-	padding-top: 70px;
-
-	@media (max-width:$mobile){
-		padding-top: 50px;
-	}
-
+   display: none;
 }
 
 section {
-	padding: rem(90) 0 rem(90);
+   padding: rem(90) 0 rem(90);
 
-	@media (max-width:$pc){
-		 padding-top: calc(rem(50) + 40*((100vw - 478px) / (1200 - 478)));
-		 padding-bottom: calc(rem(50) + 40*((100vw - 478px) / (1200 - 478)));
-	}
+   @media (max-width:$pc) {
+      padding-top: calc(rem(50) + 40*((100vw - 478px) / (1200 - 478)));
+      padding-bottom: calc(rem(50) + 40*((100vw - 478px) / (1200 - 478)));
+   }
 }
 
 section.breadcrumbs-section {
-	padding-top: rem(30);
-	
-	@media (max-width:$pc){
-		padding-top: calc(rem(15) + 15*((100vw - 478px) / (1200 - 478)));		
-  }
+   padding-top: rem(30);
+
+   @media (max-width:$pc) {
+      padding-top: calc(rem(15) + 15*((100vw - 478px) / (1200 - 478)));
+   }
 }
 
 .breadcrumbs {
-	white-space: nowrap;
-	margin-bottom: rem(45);
-	
-	@media (max-width:$pc){
-		margin-bottom: calc(rem(25) + 20*((100vw - 478px) / (1200 - 478)));		
-	}
+   white-space: nowrap;
+   margin-bottom: rem(45);
 
-	// .breadcrumbs__list
-	&__list {
-		display: flex;
-	}
+   @media (max-width:$pc) {
+      margin-bottom: calc(rem(25) + 20*((100vw - 478px) / (1200 - 478)));
+   }
 
-	// .breadcrumbs__link
-	&__link {
-		display: flex;
-		align-items: center;		
-	}
-	
-	&__icon::before {
-		content: "\e902";
-		@extend %ic;
-		font-size: rem(14);
-		margin: 0px em(7, 14);
-	}
+   // .breadcrumbs__list
+   &__list {
+      display: flex;
+   }
+
+   // .breadcrumbs__link
+   &__link {
+      display: flex;
+      align-items: center;
+   }
+
+   &__icon::before {
+      content: "\e902";
+      @extend %ic;
+      font-size: rem(14);
+      margin: 0px em(7, 14);
+   }
 }
 
 section.no-padding {
-	padding: 0;
+   padding: 0;
 }
 
 h1 {
-	font-size: rem(60);
-		
-	@media (max-width:$pc) {
-		font-size:  calc(rem(40) + 20*((100vw - 478px) / (1200 - 478)));
-	}
-}	
+   font-size: rem(60);
+
+   @media (max-width:$pc) {
+      font-size: calc(rem(40) + 20*((100vw - 478px) / (1200 - 478)));
+   }
+}
 
 h2 {
-	font-size: rem(40);
-	text-align: center;		
-	margin-bottom: rem(50);
+   font-size: rem(40);
+   text-align: center;
+   margin-bottom: rem(50);
 
-	@media (max-width:$pc){
-		font-size:  calc(rem(27) + 13*((100vw - 478px) / (1200 - 478)));
-		margin-bottom: calc(rem(25) + 25*((100vw - 478px) / (1200 - 478)));
-	}
+   @media (max-width:$pc) {
+      font-size: calc(rem(27) + 13*((100vw - 478px) / (1200 - 478)));
+      margin-bottom: calc(rem(25) + 25*((100vw - 478px) / (1200 - 478)));
+   }
 }
 
 h3 {
-	font-size: rem(32);
-	margin-bottom: rem(20);
+   font-size: rem(32);
+   margin-bottom: rem(20);
 
-	@media (max-width:$pc){
-		font-size:  calc(rem(24) + 8*((100vw - 478px) / (1200 - 478)));
-		margin-bottom: calc(rem(10) + 10*((100vw - 478px) / (1200 - 478)));
-	}
+   @media (max-width:$pc) {
+      font-size: calc(rem(24) + 8*((100vw - 478px) / (1200 - 478)));
+      margin-bottom: calc(rem(10) + 10*((100vw - 478px) / (1200 - 478)));
+   }
 }
 
 h4 {
-	font-size: rem(26);
-	margin-bottom: rem(15);
+   font-size: rem(26);
+   margin-bottom: rem(15);
 
-	@media (max-width:$pc){
-		font-size:  calc(rem(19) + 2*((100vw - 478px) / (1200 - 478)));
-		margin-bottom: calc(rem(10) + 5*((100vw - 478px) / (1200 - 478)));
-	}
+   @media (max-width:$pc) {
+      font-size: calc(rem(19) + 2*((100vw - 478px) / (1200 - 478)));
+      margin-bottom: calc(rem(10) + 5*((100vw - 478px) / (1200 - 478)));
+   }
 }
 
 p:not(:last-child) {
-	margin-bottom: em(20, 18);
+   margin-bottom: em(20, 18);
 }
 
 .bg-gallery-header {
-	background: url("./../img/gallery/bg-gallery-20.jpg") 0 0 no-repeat;
-	background-size: cover;
+   background: url("./../img/gallery/bg-gallery-20.jpg") 0 0 no-repeat;
+   background-size: cover;
 }
 
 .page-header__title {
-	opacity: 0;
-	transform: translateY(50px);
+   opacity: 0;
+   transform: translateY(50px);
 }
 
 .page-header__title._watcher-view {
-	opacity: 1;
-	transform: translateY(0);
-	transition: transform 1.3s ease 0s, opacity 1.3s ease 0s;
+   opacity: 1;
+   transform: translateY(0);
+   transition: transform 1.3s ease 0s, opacity 1.3s ease 0s;
 }
 
+h3,
 .title {
-	text-transform: uppercase;
-	font-family: "Merriweather", serif;
-	font-weight: 900;
-	line-height: math.div(36, 30);		
+   text-transform: uppercase;
+   font-family: "Merriweather", serif;
+   font-weight: 900;
+   line-height: math.div(36, 30);
 }
 
 .text {
-	font-size: rem(18);
-	line-height: math.div(30, 18);
+   font-size: rem(18);
+   line-height: math.div(30, 18);
 
-	@media (max-width:$pc){
-		font-size:  calc(rem(16) + 2*((100vw - 478px) / (1200 - 478)));
- }
+   @media (max-width:$pc) {
+      font-size: calc(rem(16) + 2*((100vw - 478px) / (1200 - 478)));
+   }
 }
 
 .center-text {
-	text-align: center;
+   text-align: center;
 }
 
 .float-left {
-	float: left;
-	margin: 0 em(30, 18) em(20, 18) 0;	
+   float: left;
+   margin: 0 em(30, 18) em(20, 18) 0;
 }
 
 .float-right {
-	float: right;
-	margin: 0 0 em(20, 18) em(30, 18);	
+   float: right;
+   margin: 0 0 em(20, 18) em(30, 18);
 }
 
-.float-left, .float-right {
-	@media (max-width:$mobileSmall){
-		clear: both; 
-		margin: em(10, 18) 0;
-	}
+.float-left,
+.float-right {
+   @media (max-width:$mobileSmall) {
+      clear: both;
+      margin: em(10, 18) 0;
+   }
 }
 
 .clearfix {
-	display: flow-root;
+   display: flow-root;
 }
 
 .link {
-	transition: color 0.3s ease;
+   transition: color 0.3s ease;
 }
 
 @media (any-hover: hover) {
-	.link:hover {
-	text-decoration: underline;
-	text-underline-offset: 4px;
-}
+   .link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+   }
 }
 
 .text-link {
-	color: $linkColor;
-	transition: color 0.3s ease;
+   color: $linkColor;
+   transition: color 0.3s ease;
 }
 
 @media (any-hover: hover) {
-	.text-link:hover {
-		color: $linkHoverColor;
-		text-decoration: underline;
-		text-underline-offset: 4px;
-	}
+   .text-link:hover {
+      color: $linkHoverColor;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+   }
 }
 
 // Общие стили для всех кнопок сайта
-.button, .book-button {
-	display: block;
-	padding: em(10,18) em(24, 18) em(7, 18);
-	border-radius: 4px;
-	font-weight: 500;
-	letter-spacing: 1px;
-	text-transform: uppercase;	
-	visibility: hidden;
-	transform: scale(0.5);
-	transition: color 0.3s, background-color 0.3s, transform 0.8s;
+.button,
+.book-button {
+   display: block;
+   padding: em(10, 18) em(24, 18) em(7, 18);
+   border-radius: 4px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   visibility: hidden;
+   transform: scale(0.5);
+   transition: color 0.3s, background-color 0.3s, transform 0.8s;
 }
 
-.button._watcher-view, .book-button._watcher-view {
-	visibility: visible;
-	transform: scale(1);	
+.button._watcher-view,
+.book-button._watcher-view {
+   visibility: visible;
+   transform: scale(1);
 }
 
 .button {
-	border: solid 2px $themeColor;
-	background-color: transparent;
-	color: $themeColor;
-	padding: em(10,18) em(46, 18) em(7, 18);
-	
-	&:hover {
-		background-color: $themeColor;
-		color: $mainColorLight;
-	}
+   border: solid 2px $themeColor;
+   background-color: transparent;
+   color: $themeColor;
+   padding: em(10, 18) em(46, 18) em(7, 18);
+
+   &:hover {
+      background-color: $themeColor;
+      color: $mainColorLight;
+   }
 }
 
 .book-button {
-	border: solid 2px $accentColor;
-	background-color: $accentColor;
-	color: $mainColorLight;
+   border: solid 2px $accentColor;
+   background-color: $accentColor;
+   color: $mainColorLight;
 
-	&:hover {
-		background-color: transparent;
-		color: $accentColor;
-	}
+   &:hover {
+      background-color: transparent;
+      color: $accentColor;
+   }
 }
 
-.button:active, .book-button:active {
-	transform: translate(3px, 6px);	
+.button:active,
+.book-button:active {
+   transform: translate(3px, 6px);
 }
 
 button:active {
-	transform: translate(1px, 2px);	
-	transition: transform 0.3s ease;
+   transform: translate(1px, 2px);
+   transition: transform 0.3s ease;
 }
 
 button:focus {
-	outline: none;
+   outline: none;
 }
 
 .button-block {
-	display:flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	align-self: center;
-	gap: rem(15);
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-self: center;
+   gap: rem(15);
 }
 
 .margin-bottom {
-	margin-bottom: em(25, 18);
+   margin-bottom: em(25, 18);
 }
 
 .img-box {
-	width: 30%;
+   width: 30%;
 
-	@media (max-width:$tablet){
-		width: 40%;
-	}
+   @media (max-width:$tablet) {
+      width: 40%;
+   }
 
-	@media (max-width:$mobile){
-		 width: 45%; 
-	}
+   @media (max-width:$mobile) {
+      width: 45%;
+   }
 
-	@media (max-width:$mobileSmall){
-		width: 100%; 
-	}
+   @media (max-width:$mobileSmall) {
+      width: 100%;
+   }
 }
 
 // отключение значка загрузки в lightgallery
-a#lg-download-1{display: none;}
+a#lg-download-1 {
+   display: none;
+}
