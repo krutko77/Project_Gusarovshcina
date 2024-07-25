@@ -17,10 +17,14 @@
       background: url("../img/main-bg-offer.jpg");
       background-size: cover;
       background-position: center bottom;
-
+		
       @media (max-width:$tablet) {
          background: url("../img/bg-offer-990.jpg");
-         background-position: bottom right;
+         background-position: top right;
+      }
+
+		@media screen and (max-width: $tablet) and (min-aspect-ratio: 3/2) {
+			background-position: bottom right;
       }
 
       @media (max-width:$mobileSmall) {
