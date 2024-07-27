@@ -7,14 +7,14 @@
          padding: 0 0 100px;
       }
 
-      @media screen and (max-width: $tablet) and (min-aspect-ratio: 3/2) {
+      @media (max-width: $tablet) and (min-aspect-ratio: 3/2) {
          padding: 0;
       }
    }
 
    .offer-home {
       height: 100vh;
-      background: url("../img/main-bg-offer.jpg");
+      background: url("../img/bg-offer-1920.jpg");
       background-size: cover;
       background-position: center bottom;
 		
@@ -23,12 +23,12 @@
          background-position: top right;
       }
 
-		@media screen and (max-width: $tablet) and (min-aspect-ratio: 3/2) {
+		@media (max-width: $tablet) and (min-aspect-ratio: 3/2) {
 			background-position: bottom right;
       }
 
       @media (max-width:$mobileSmall) {
-         background: url("../img/bg-offer-30-480.jpg");
+         background: url("../img/bg-offer-15-480.jpg");
       }
 
       // .offer-home__wrapper
@@ -73,6 +73,7 @@
 
          @media (max-width:$mobileSmall) {
             margin-bottom: em(10, 34);
+				text-shadow: 1px 1px 1px #000, -1px -1px 1px #000;
          }
       }
 
@@ -86,6 +87,10 @@
          text-shadow: 5px 5px 30px #000, -5px -5px 30px #000;
          opacity: 0;
          transform: translateY(50px);
+
+			@media (max-width:$mobileSmall) {
+				text-shadow: 1px 1px 1px #000, -1px -1px 1px #000;
+			}
       }
 
       &__title._watcher-view,
