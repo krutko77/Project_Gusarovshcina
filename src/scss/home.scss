@@ -73,7 +73,7 @@
 
          @media (max-width:$mobileSmall) {
             margin-bottom: em(10, 34);
-				text-shadow: 1px 1px 1px #000, -1px -1px 1px #000;
+				text-shadow: 1px 1px 1px $linkHoverColor, -1px -1px 1px $linkHoverColor;
          }
       }
 
@@ -89,7 +89,7 @@
          transform: translateY(50px);
 
 			@media (max-width:$mobileSmall) {
-				text-shadow: 1px 1px 1px #000, -1px -1px 1px #000;
+				text-shadow: 1px 1px 1px $themeColor, -1px -1px 1px $themeColor;
 			}
       }
 
